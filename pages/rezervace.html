@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervace | Chang Restaurant Litv&iacute;nov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+</head>
+<body>
+    <nav id="navbar" class="navbar scrolled">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../img/logo.jpg" alt="Chang" style="height: 35px; border-radius: 4px;">
+                
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Domov</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="recenze.html" class="nav-link">Recenze</a></li>
+                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+                <li><a href="rezervace.html" class="nav-link nav-cta active">Rezervace</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <span class="section-tag">Rezervujte si st&#367;l</span>
+        <h1 class="section-title">Rezervace</h1>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <form class="reservation-form" id="reservationForm" data-aos="fade-up">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Jm&eacute;no a p&rcaron;&iacute;jmen&iacute; *</label>
+                        <input type="text" id="name" name="name" class="form-input" required placeholder="Jan Nov&aacute;k">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+420 123 456 789">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="jan@email.cz">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="date">Datum *</label>
+                        <input type="date" id="date" name="date" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="time">&Ccaron;as *</label>
+                        <input type="time" id="time" name="time" class="form-input" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="guests">Po&ccaron;et host&#367; *</label>
+                        <select id="guests" name="guests" class="form-select" required>
+                            <option value="">Vyberte...</option>
+                            <option value="1">1 osoba</option>
+                            <option value="2">2 osoby</option>
+                            <option value="3">3 osoby</option>
+                            <option value="4">4 osoby</option>
+                            <option value="5">5 osob</option>
+                            <option value="6">6 osob</option>
+                            <option value="7">7 osob</option>
+                            <option value="8">8 osob</option>
+                            <option value="9">9 osob</option>
+                            <option value="10+">10+ osob</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="occasion">P&rcaron;&iacute;le&zcaron;itost</label>
+                        <select id="occasion" name="occasion" class="form-select">
+                            <option value="">Vyberte (nepovinn&eacute;)</option>
+                            <option value="birthday">Narozeniny</option>
+                            <option value="anniversary">V&yacute;ro&ccaron;&iacute;</option>
+                            <option value="business">Pracovn&iacute; ob&ecaron;d/ve&ccaron;e&rcaron;e</option>
+                            <option value="date">Romantick&aacute; ve&ccaron;e&rcaron;e</option>
+                            <option value="celebration">Oslava</option>
+                            <option value="other">Jin&eacute;</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="note">Pozn&aacute;mka</label>
+                    <textarea id="note" name="note" class="form-textarea" placeholder="Speci&aacute;ln&iacute; po&zcaron;adavky, alergie, d&ecaron;tsk&aacute; seda&ccaron;ka..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                    Odeslat rezervaci
+                </button>
+
+                <p style="color: var(--gray); font-size: 0.8rem; text-align: center; margin-top: 16px;">
+                    Rezervaci potvrd&iacute;me telefonicky nebo e-mailem do 2 hodin.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Chang Restaurant Litv&iacute;nov. V&scaron;echna pr&aacute;va vyhrazena.</p>
+                <a href="../index.html" class="nav-logo" style="gap: 8px;">
+                    <span class="logo-chinese" style="font-size: 1.2rem;">&#38271;</span>
+                    <span class="logo-text" style="font-size: 1rem; letter-spacing: 4px;">CHANG</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

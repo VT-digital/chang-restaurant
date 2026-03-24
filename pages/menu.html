@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Chang Restaurant Litv&iacute;nov</title>
+    <meta name="description" content="Menu restaurace Chang - autentick&aacute; asijsk&aacute; kuchyn&ecaron;, thajsk&eacute; speciality, sushi, &ccaron;&iacute;nsk&aacute; j&iacute;dla.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar scrolled">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../img/logo.jpg" alt="Chang" style="height: 35px; border-radius: 4px;">
+                
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Domov</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="recenze.html" class="nav-link">Recenze</a></li>
+                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+                <li><a href="rezervace.html" class="nav-link nav-cta">Rezervace</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <span class="section-tag">Na&scaron;e nab&iacute;dka</span>
+        <h1 class="section-title">Menu</h1>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="section">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="menu-categories" data-aos="fade-up">
+                <button class="menu-category-btn active" data-category="all">V&scaron;e</button>
+                <button class="menu-category-btn" data-category="predkrmy">P&rcaron;edkrmy</button>
+                <button class="menu-category-btn" data-category="polevky">Pol&eacute;vky</button>
+                <button class="menu-category-btn" data-category="kure">Ku&rcaron;ec&iacute;</button>
+                <button class="menu-category-btn" data-category="veprove">Vep&rcaron;ov&eacute;</button>
+                <button class="menu-category-btn" data-category="hovezi">Hov&ecaron;z&iacute;</button>
+                <button class="menu-category-btn" data-category="morske">Mo&rcaron;sk&eacute; plody</button>
+                <button class="menu-category-btn" data-category="nudle">Nudle &amp; r&yacute;&zcaron;e</button>
+                <button class="menu-category-btn" data-category="sushi">Sushi</button>
+                <button class="menu-category-btn" data-category="dezerty">Dezerty</button>
+                <button class="menu-category-btn" data-category="napoje">N&aacute;poje</button>
+            </div>
+
+            <!-- Predkrmy -->
+            <div class="menu-section" data-category="predkrmy" data-aos="fade-up">
+                <h2 class="menu-section-title">P&rcaron;edkrmy &amp; sn&aacute;cky</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">1.</span> Jarn&iacute; z&aacute;vitky (4 ks)</div>
+                            <p class="menu-item-desc">K&rcaron;upav&eacute; z&aacute;vitky pln&ecaron;n&eacute; zeleninou, pod&aacute;van&eacute; se sladk&yacute;m chilli dipem</p>
+                        </div>
+                        <span class="menu-item-price">89 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">2.</span> Krevetov&eacute; tou&scaron;ty (4 ks)</div>
+                            <p class="menu-item-desc">K&rcaron;upav&eacute; tou&scaron;ty s krevetovou hmotou a s&eacute;zamem</p>
+                        </div>
+                        <span class="menu-item-price">119 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">3.</span> Satay ku&rcaron;ec&iacute; (4 ks)</div>
+                            <p class="menu-item-desc">Grilovan&eacute; ku&rcaron;ec&iacute; &scaron;p&iacute;zky s ara&scaron;&iacute;dov&yacute;m dipem</p>
+                        </div>
+                        <span class="menu-item-price">109 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">4.</span> Edamame</div>
+                            <p class="menu-item-desc">Pa&rcaron;en&eacute; s&oacute;jov&eacute; lusky s mo&rcaron;skou sol&iacute;</p>
+                        </div>
+                        <span class="menu-item-price">69 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">5.</span> Gyoza (6 ks)</div>
+                            <p class="menu-item-desc">Japonsk&eacute; ta&scaron;ti&ccaron;ky pln&ecaron;n&eacute; vep&rcaron;ov&yacute;m masem a zeleninou</p>
+                        </div>
+                        <span class="menu-item-price">99 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">6.</span> K&rcaron;upav&yacute; tofu</div>
+                            <p class="menu-item-desc">Sma&zcaron;en&eacute; tofu s thajskou basilkou a chilli</p>
+                        </div>
+                        <span class="menu-item-price">89 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Polevky -->
+            <div class="menu-section" data-category="polevky" data-aos="fade-up">
+                <h2 class="menu-section-title">Pol&eacute;vky</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">10.</span> Tom Yum Kung <span class="menu-item-spicy">&#127798;&#127798;</span></div>
+                            <p class="menu-item-desc">Pikantní thajsk&aacute; pol&eacute;vka s krevetami, citronovou tr&aacute;vou a galang&aacute;lem</p>
+                        </div>
+                        <span class="menu-item-price">159 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">11.</span> Tom Kha Gai</div>
+                            <p class="menu-item-desc">Kr&eacute;mov&aacute; kokosov&aacute; pol&eacute;vka s ku&rcaron;ec&iacute;m masem a hou&zcaron;bami</p>
+                        </div>
+                        <span class="menu-item-price">139 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">12.</span> Pho Bo</div>
+                            <p class="menu-item-desc">Vietnamsk&aacute; hov&ecaron;z&iacute; pol&eacute;vka s r&yacute;&zcaron;ov&yacute;mi nudlemi a bylinkami</p>
+                        </div>
+                        <span class="menu-item-price">149 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">13.</span> Miso pol&eacute;vka</div>
+                            <p class="menu-item-desc">Tradi&ccaron;n&iacute; japonsk&aacute; pol&eacute;vka s tofu a &rcaron;asou wakame</p>
+                        </div>
+                        <span class="menu-item-price">79 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">14.</span> Wonton pol&eacute;vka</div>
+                            <p class="menu-item-desc">&Ccaron;&iacute;nsk&aacute; pol&eacute;vka s masov&yacute;mi ta&scaron;ti&ccaron;kami a nudlemi</p>
+                        </div>
+                        <span class="menu-item-price">99 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kureci -->
+            <div class="menu-section" data-category="kure" data-aos="fade-up">
+                <h2 class="menu-section-title">Ku&rcaron;ec&iacute; speciality</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">20.</span> Kung Pao ku&rcaron;e <span class="menu-item-spicy">&#127798;</span></div>
+                            <p class="menu-item-desc">K&rcaron;upav&eacute; ku&rcaron;ec&iacute; kousky v pikantní omá&ccaron;ce s ara&scaron;&iacute;dy</p>
+                        </div>
+                        <span class="menu-item-price">169 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">21.</span> Ku&rcaron;e se sladkou chilli omá&ccaron;kou</div>
+                            <p class="menu-item-desc">K&rcaron;upav&eacute; ku&rcaron;ec&iacute; s paprikou, anansem a sladkou chilli</p>
+                        </div>
+                        <span class="menu-item-price">169 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">22.</span> Thai Green Curry <span class="menu-item-spicy">&#127798;&#127798;</span></div>
+                            <p class="menu-item-desc">Zelen&eacute; thajsk&eacute; kari s ku&rcaron;ec&iacute;m, bambusem a kokosov&yacute;m ml&eacute;kem</p>
+                        </div>
+                        <span class="menu-item-price">179 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">23.</span> Teriyaki ku&rcaron;e</div>
+                            <p class="menu-item-desc">Grilovan&eacute; ku&rcaron;ec&iacute; v teriyaki omá&ccaron;ce se s&eacute;zamem a r&yacute;&zcaron;&iacute;</p>
+                        </div>
+                        <span class="menu-item-price">169 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">24.</span> Massaman Curry</div>
+                            <p class="menu-item-desc">Thajsk&eacute; kari s ku&rcaron;ec&iacute;m, brambory a ara&scaron;&iacute;dy v kokosov&eacute;m ml&eacute;ce</p>
+                        </div>
+                        <span class="menu-item-price">179 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">25.</span> Ku&rcaron;e v pivo&ccaron;kov&eacute;m t&ecaron;st&iacute;&ccaron;ku</div>
+                            <p class="menu-item-desc">K&rcaron;upav&eacute; ku&rcaron;ec&iacute; s citr&oacute;novou omá&ccaron;kou</p>
+                        </div>
+                        <span class="menu-item-price">159 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veprove -->
+            <div class="menu-section" data-category="veprove" data-aos="fade-up">
+                <h2 class="menu-section-title">Vep&rcaron;ov&eacute;</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">30.</span> Sladk&eacute; vep&rcaron;ov&eacute;</div>
+                            <p class="menu-item-desc">K&rcaron;upav&eacute; vep&rcaron;ov&eacute; maso ve sladkokysel&eacute; omá&ccaron;ce</p>
+                        </div>
+                        <span class="menu-item-price">169 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">31.</span> Vep&rcaron;ov&eacute; s bambusem <span class="menu-item-spicy">&#127798;</span></div>
+                            <p class="menu-item-desc">Vep&rcaron;ov&eacute; maso sma&zcaron;en&eacute; s bambusov&yacute;mi v&yacute;honky a paprikou</p>
+                        </div>
+                        <span class="menu-item-price">169 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">32.</span> Char Siu vep&rcaron;ov&eacute;</div>
+                            <p class="menu-item-desc">&Ccaron;&iacute;nsk&eacute; BBQ vep&rcaron;ov&eacute; s medovou glazurou</p>
+                        </div>
+                        <span class="menu-item-price">179 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">33.</span> Red Curry s vep&rcaron;ov&yacute;m <span class="menu-item-spicy">&#127798;&#127798;</span></div>
+                            <p class="menu-item-desc">&Ccaron;erven&eacute; thajsk&eacute; kari s vep&rcaron;ov&yacute;m, li&ccaron;i a bazalkou</p>
+                        </div>
+                        <span class="menu-item-price">179 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hovezi -->
+            <div class="menu-section" data-category="hovezi" data-aos="fade-up">
+                <h2 class="menu-section-title">Hov&ecaron;z&iacute;</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">40.</span> Hov&ecaron;z&iacute; s brokolic&iacute;</div>
+                            <p class="menu-item-desc">Jemn&eacute; pl&aacute;tky hov&ecaron;z&iacute;ho s brokolic&iacute; v ústricov&eacute; omá&ccaron;ce</p>
+                        </div>
+                        <span class="menu-item-price">189 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">41.</span> Hov&ecaron;z&iacute; Pad Kra Pao <span class="menu-item-spicy">&#127798;&#127798;&#127798;</span></div>
+                            <p class="menu-item-desc">Sma&zcaron;en&eacute; hov&ecaron;z&iacute; s thajskou bazalkou a chilli, se sázen&yacute;m vejcem</p>
+                        </div>
+                        <span class="menu-item-price">189 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">42.</span> Mongolsk&eacute; hov&ecaron;z&iacute;</div>
+                            <p class="menu-item-desc">Hov&ecaron;z&iacute; v sladk&eacute; s&oacute;jov&eacute; omá&ccaron;ce se z&aacute;zvorem a jarní cibulkou</p>
+                        </div>
+                        <span class="menu-item-price">199 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Morske plody -->
+            <div class="menu-section" data-category="morske" data-aos="fade-up">
+                <h2 class="menu-section-title">Mo&rcaron;sk&eacute; plody</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">50.</span> Krevety na &ccaron;esneku</div>
+                            <p class="menu-item-desc">Tygr&iacute; krevety sma&zcaron;en&eacute; s &ccaron;esnekem a peprem</p>
+                        </div>
+                        <span class="menu-item-price">219 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">51.</span> Krevety v kari <span class="menu-item-spicy">&#127798;</span></div>
+                            <p class="menu-item-desc">Krevety ve &zcaron;lut&eacute;m thajsk&eacute;m kari s kokosov&yacute;m ml&eacute;kem</p>
+                        </div>
+                        <span class="menu-item-price">229 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">52.</span> Sma&zcaron;en&eacute; kalmary</div>
+                            <p class="menu-item-desc">K&rcaron;upav&eacute; kalmary se sladkou chilli omá&ccaron;kou</p>
+                        </div>
+                        <span class="menu-item-price">179 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">53.</span> Ryba v citronov&eacute; tr&aacute;v&ecaron;</div>
+                            <p class="menu-item-desc">Pa&rcaron;en&aacute; ryba s citronovou tr&aacute;vou, chilli a limetkou</p>
+                        </div>
+                        <span class="menu-item-price">209 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nudle & Ryze -->
+            <div class="menu-section" data-category="nudle" data-aos="fade-up">
+                <h2 class="menu-section-title">Nudle &amp; r&yacute;&zcaron;e</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">60.</span> Pad Thai</div>
+                            <p class="menu-item-desc">Klasick&eacute; thajsk&eacute; sma&zcaron;en&eacute; nudle s krevetami/ku&rcaron;ec&iacute;m, tofu a ara&scaron;&iacute;dy</p>
+                        </div>
+                        <span class="menu-item-price">189 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">61.</span> Sma&zcaron;en&aacute; r&yacute;&zcaron;e</div>
+                            <p class="menu-item-desc">Wok r&yacute;&zcaron;e s vejcem, zeleninou a v&yacute;b&ecaron;rem masa</p>
+                        </div>
+                        <span class="menu-item-price">149 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">62.</span> Chow Mein</div>
+                            <p class="menu-item-desc">Sma&zcaron;en&eacute; &ccaron;&iacute;nsk&eacute; nudle se zeleninou a masem</p>
+                        </div>
+                        <span class="menu-item-price">159 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">63.</span> Pad See Ew</div>
+                            <p class="menu-item-desc">&#352;irok&eacute; r&yacute;&zcaron;ov&eacute; nudle s tmavou sójovou omá&ccaron;kou, vejcem a brokolic&iacute;</p>
+                        </div>
+                        <span class="menu-item-price">169 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">64.</span> Nasi Goreng <span class="menu-item-spicy">&#127798;</span></div>
+                            <p class="menu-item-desc">Indon&eacute;sk&aacute; sma&zcaron;en&aacute; r&yacute;&zcaron;e s krevetami a sa&tcaron;&eacute;</p>
+                        </div>
+                        <span class="menu-item-price">169 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sushi -->
+            <div class="menu-section" data-category="sushi" data-aos="fade-up">
+                <h2 class="menu-section-title">Sushi</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">70.</span> Maki set (8 ks)</div>
+                            <p class="menu-item-desc">V&yacute;b&ecaron;r maki roll&#367; — losos, tuna&ccaron;, avok&aacute;do, okurka</p>
+                        </div>
+                        <span class="menu-item-price">199 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">71.</span> Nigiri set (6 ks)</div>
+                            <p class="menu-item-desc">Losos, tuna&ccaron;, kreveta — po 2 kusy</p>
+                        </div>
+                        <span class="menu-item-price">249 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">72.</span> Chang special set (16 ks)</div>
+                            <p class="menu-item-desc">Kombinace maki, nigiri a inside-out roll&#367;</p>
+                        </div>
+                        <span class="menu-item-price">399 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">73.</span> Dragon Roll (8 ks)</div>
+                            <p class="menu-item-desc">Inside-out s krevetou tempura, avok&aacute;dem a ú&rcaron;em</p>
+                        </div>
+                        <span class="menu-item-price">299 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dezerty -->
+            <div class="menu-section" data-category="dezerty" data-aos="fade-up">
+                <h2 class="menu-section-title">Dezerty</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">80.</span> Mango sticky rice</div>
+                            <p class="menu-item-desc">Thajsk&yacute; dezert — sladk&aacute; lepkav&aacute; r&yacute;&zcaron;e s &ccaron;erstv&yacute;m mangem a kokosov&yacute;m ml&eacute;kem</p>
+                        </div>
+                        <span class="menu-item-price">119 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">81.</span> Sma&zcaron;en&yacute; ban&aacute;n</div>
+                            <p class="menu-item-desc">Ban&aacute;n v k&rcaron;upav&eacute;m t&ecaron;st&iacute;&ccaron;ku s vanilkovou zmrzlinou a medem</p>
+                        </div>
+                        <span class="menu-item-price">89 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name"><span class="menu-item-number">82.</span> Mochi zmrzlina (3 ks)</div>
+                            <p class="menu-item-desc">Japonsk&aacute; r&yacute;&zcaron;ov&aacute; zmrzlina — matcha, jahoda, mango</p>
+                        </div>
+                        <span class="menu-item-price">99 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Napoje -->
+            <div class="menu-section" data-category="napoje" data-aos="fade-up">
+                <h2 class="menu-section-title">N&aacute;poje</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Jasminov&yacute; &ccaron;aj (konvi&ccaron;ka)</div>
+                        </div>
+                        <span class="menu-item-price">59 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Bubble Tea</div>
+                            <p class="menu-item-desc">R&#367;zn&eacute; p&rcaron;&iacute;chut&ecaron; — mango, taro, matcha, lychee</p>
+                        </div>
+                        <span class="menu-item-price">89 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Thai Iced Tea</div>
+                            <p class="menu-item-desc">Tradi&ccaron;n&iacute; thajsk&yacute; &ccaron;aj s kondenzovan&yacute;m ml&eacute;kem</p>
+                        </div>
+                        <span class="menu-item-price">69 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Chang pivo (0.33l)</div>
+                            <p class="menu-item-desc">Thajsk&eacute; pivo</p>
+                        </div>
+                        <span class="menu-item-price">69 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Sake (180ml)</div>
+                        </div>
+                        <span class="menu-item-price">149 K&ccaron;</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Coca-Cola / Sprite / Fanta</div>
+                        </div>
+                        <span class="menu-item-price">39 K&ccaron;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <p style="color: var(--gray); font-size: 0.9rem; margin-bottom: 16px;">
+                    * Ceny a polo&zcaron;ky jsou orienta&ccaron;n&iacute; a budou up&rcaron;esn&ecaron;ny dle aktu&aacute;ln&iacute; nab&iacute;dky restaurace.<br>
+                    &#127798; = m&iacute;rn&ecaron; p&aacute;liv&eacute; | &#127798;&#127798; = st&rcaron;edn&ecaron; p&aacute;liv&eacute; | &#127798;&#127798;&#127798; = velmi p&aacute;liv&eacute;
+                </p>
+                <a href="rezervace.html" class="btn btn-primary">Rezervovat st&#367;l</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Chang Restaurant Litv&iacute;nov. V&scaron;echna pr&aacute;va vyhrazena.</p>
+                <a href="../index.html" class="nav-logo" style="gap: 8px;">
+                    <span class="logo-chinese" style="font-size: 1.2rem;">&#38271;</span>
+                    <span class="logo-text" style="font-size: 1rem; letter-spacing: 4px;">CHANG</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
