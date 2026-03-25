@@ -3,6 +3,12 @@
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Hero background ken burns ---
+    const heroBg = document.getElementById('heroBg');
+    if (heroBg) {
+        setTimeout(() => heroBg.classList.add('loaded'), 100);
+    }
+
     // --- Preloader ---
     const preloader = document.getElementById('preloader');
     if (preloader) {

@@ -43,7 +43,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-bg">
+        <div class="hero-bg" id="heroBg">
             <div class="hero-overlay"></div>
             <div class="hero-pattern"></div>
         </div>
@@ -83,6 +83,9 @@
                         gastronomick&yacute; z&aacute;&zcaron;itek. Ide&aacute;ln&iacute; m&iacute;sto pro setk&aacute;n&iacute; s p&rcaron;&aacute;teli,
                         rodinn&eacute; oslavy &ccaron;i obchodn&iacute; sch&#367;zky.
                     </p>
+                    <p class="about-text" style="font-size: 0.9rem; color: var(--gray); border-left: 2px solid var(--gold); padding-left: 16px; margin-top: 8px;">
+                        Nav&aacute;zali jsme na tradic&iacute; obl&iacute;benou restauraci <strong style="color: var(--gray-light);">IMBIS.CZ</strong> na Tr&zcaron;n&iacute; 421 &mdash; a pov&yacute;&scaron;ili jsme ji na zcela novou &uacute;rove&ccaron; autentick&eacute; asijsk&eacute; kuchyn&ecaron;.
+                    </p>
                     <div class="about-features">
                         <div class="feature">
                             <div class="feature-icon">&#127798;</div>
@@ -116,11 +119,8 @@
                 </div>
                 <div class="about-visual" data-aos="fade-left" data-aos-duration="1000">
                     <div class="about-image-wrapper">
-                        <div class="about-image placeholder-img">
-                            <div class="placeholder-content">
-                                <span>Fotografie interi&eacute;ru</span>
-                                <small>Bude dopln&ecaron;no</small>
-                            </div>
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=1067&fit=crop" alt="Interi&eacute;r Chang Asian Cuisine" loading="lazy">
                         </div>
                         <div class="about-accent"></div>
                     </div>
@@ -148,8 +148,8 @@
             </div>
             <div class="dishes-grid">
                 <div class="dish-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="dish-image placeholder-img">
-                        <div class="placeholder-content"><span>PET MUN</span></div>
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1432139509613-5c4255a1d197?w=800&h=800&fit=crop" alt="PET MUN &mdash; ka&ccaron;n&iacute; z&aacute;vitek" loading="lazy">
                     </div>
                     <div class="dish-info">
                         <h3>PET MUN</h3>
@@ -158,8 +158,8 @@
                     </div>
                 </div>
                 <div class="dish-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="dish-image placeholder-img">
-                        <div class="placeholder-content"><span>Udon Chiang Mai</span></div>
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=800&fit=crop" alt="Udon Chiang Mai" loading="lazy">
                     </div>
                     <div class="dish-info">
                         <h3>Udon Chiang Mai</h3>
@@ -168,8 +168,8 @@
                     </div>
                 </div>
                 <div class="dish-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="dish-image placeholder-img">
-                        <div class="placeholder-content"><span>Thajsk&eacute; kari</span></div>
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&h=800&fit=crop" alt="Thajsk&eacute; kari" loading="lazy">
                     </div>
                     <div class="dish-info">
                         <h3>Thajsk&eacute; kari</h3>
@@ -178,12 +178,12 @@
                     </div>
                 </div>
                 <div class="dish-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="dish-image placeholder-img">
-                        <div class="placeholder-content"><span>Pol&eacute;dní menu</span></div>
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=800&h=800&fit=crop" alt="Pol&eacute;dn&iacute; menu" loading="lazy">
                     </div>
                     <div class="dish-info">
-                        <h3>Pol&eacute;dní menu</h3>
-                        <p>Ka&zcaron;d&yacute; t&yacute;den &ccaron;erstv&eacute; pol&eacute;dní menu &mdash; sledujte na&scaron;e aktuality na Facebooku</p>
+                        <h3>Pol&eacute;dn&iacute; menu</h3>
+                        <p>Ka&zcaron;d&yacute; t&yacute;den &ccaron;erstv&eacute; pol&eacute;dn&iacute; menu &mdash; sledujte na&scaron;e aktuality na Facebooku</p>
                         <span class="dish-price">Ka&zcaron;d&yacute; t&yacute;den</span>
                     </div>
                 </div>
@@ -288,6 +288,9 @@
                     <div class="footer-social">
                         <a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram (p&rcaron;ipravujeme)" class="social-link instagram" title="Instagram &mdash; p&rcaron;ipravujeme">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                         </a>
                     </div>
                 </div>
