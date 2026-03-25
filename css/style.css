@@ -1373,6 +1373,377 @@ img { max-width: 100%; height: auto; display: block; }
     }
 }
 
+/* --- Promo Banner --- */
+.promo-banner {
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.15) 0%, rgba(201, 168, 76, 0.05) 100%);
+    border-top: 1px solid rgba(201, 168, 76, 0.3);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+    padding: 20px 0;
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.promo-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.promo-content > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.promo-content strong {
+    display: block;
+    color: var(--gold);
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.promo-content span {
+    color: var(--gray-light);
+    font-size: 0.9rem;
+}
+
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+}
+
+/* --- Lunch Section --- */
+.lunch-section {
+    background: var(--black);
+}
+
+.lunch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.lunch-item {
+    padding: 24px;
+    background: var(--dark-surface);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--dark-border);
+    transition: var(--transition);
+}
+
+.lunch-item.featured {
+    border-color: rgba(201, 168, 76, 0.4);
+    background: linear-gradient(135deg, var(--dark-surface) 0%, rgba(201, 168, 76, 0.05) 100%);
+}
+
+.lunch-item:hover {
+    border-color: var(--gold);
+}
+
+.lunch-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.lunch-item-top h4 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.lunch-item p {
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.lunch-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gold);
+    white-space: nowrap;
+}
+
+.lunch-variants {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.lunch-variants span {
+    font-size: 0.78rem;
+    padding: 2px 8px;
+    background: rgba(201, 168, 76, 0.15);
+    border-radius: 4px;
+    color: var(--gold);
+}
+
+.allergens {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--gray);
+    opacity: 0.7;
+    margin-top: 6px;
+}
+
+.lunch-drinks {
+    padding: 20px 24px;
+    background: var(--dark-card);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--dark-border);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lunch-drinks h4 {
+    font-size: 0.9rem;
+    color: var(--gray-light);
+    white-space: nowrap;
+}
+
+.lunch-drink-items {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.lunch-drink-items span {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.lunch-drink-items strong {
+    color: var(--gold);
+}
+
+/* --- Lunch Menu Highlight (menu page) --- */
+.lunch-menu-highlight {
+    background: linear-gradient(135deg, var(--dark-surface) 0%, rgba(201, 168, 76, 0.08) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    border-radius: var(--radius);
+    padding: 40px;
+    margin-bottom: 0;
+}
+
+.lunch-highlight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.lunch-time-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(201, 168, 76, 0.1);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.lunch-time-badge span {
+    font-size: 1.5rem;
+}
+
+.lunch-time-badge strong {
+    display: block;
+    color: var(--gold);
+    font-size: 1.1rem;
+}
+
+.lunch-time-badge small {
+    color: var(--gray);
+    font-size: 0.8rem;
+}
+
+.lunch-highlight-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.lunch-highlight-item {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--dark-border);
+}
+
+.lhi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.lhi-header strong {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.lunch-tag-price {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gold);
+    white-space: nowrap;
+}
+
+.lunch-highlight-item p {
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.lunch-highlight-drinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 16px 20px;
+    background: rgba(201, 168, 76, 0.05);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.lunch-highlight-drinks strong {
+    color: var(--gray-light);
+    font-size: 0.9rem;
+}
+
+.lunch-highlight-drinks span {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+/* --- Reels Section --- */
+.reels-section {
+    background: var(--dark);
+}
+
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.reel-card {
+    background: var(--dark-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--dark-border);
+    transition: var(--transition);
+}
+
+.reel-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+}
+
+.reel-thumb {
+    position: relative;
+    aspect-ratio: 9/16;
+    overflow: hidden;
+    max-height: 320px;
+}
+
+.reel-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.reel-card:hover .reel-thumb img {
+    transform: scale(1.05);
+}
+
+.reel-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 54px;
+    height: 54px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding-left: 4px;
+    transition: var(--transition);
+}
+
+.reel-card:hover .reel-play {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--black);
+}
+
+.reel-views {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.reel-card > p {
+    padding: 16px;
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .lunch-grid {
+        grid-template-columns: 1fr;
+    }
+    .lunch-highlight-items {
+        grid-template-columns: 1fr;
+    }
+    .reels-grid {
+        grid-template-columns: 1fr;
+    }
+    .promo-content {
+        flex-direction: column;
+    }
+    .lunch-highlight-header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .lunch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reels-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* --- FB Feed Section --- */
 .fb-feed-section {
     padding: 40px 0;
