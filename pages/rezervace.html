@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <style>
+        @media (max-width: 768px) {
+            .reservation-layout { grid-template-columns: 1fr !important; }
+        }
+    </style>
 </head>
 <body>
     <nav id="navbar" class="navbar scrolled">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">
-                <img src="../img/logo.jpg" alt="Chang" style="height: 35px; border-radius: 4px;">
+                <img src="../img/logo-nav.png" alt="Chang Asian Cuisine" style="height: 40px;">
                 
             </a>
             <ul class="nav-menu">
@@ -39,6 +44,7 @@
 
     <section class="section">
         <div class="container">
+            <div class="reservation-layout" style="display: grid; grid-template-columns: 1fr 340px; gap: 40px; align-items: start;">
             <form class="reservation-form" id="reservationForm" data-aos="fade-up">
                 <div class="form-row">
                     <div class="form-group">
@@ -111,6 +117,48 @@
                     Rezervaci potvrd&iacute;me telefonicky nebo e-mailem do 2 hodin.
                 </p>
             </form>
+
+            <!-- Sidebar -->
+            <div data-aos="fade-left" style="position: sticky; top: 100px;">
+                <div style="background: var(--dark-card); border-radius: var(--radius); padding: 28px; border: 1px solid var(--dark-border); margin-bottom: 20px;">
+                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 16px; color: var(--white);">Rezervace telefonicky</h3>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin-bottom: 12px;">
+                        Preferujete osobn&iacute; p&rcaron;&iacute;stup? Zavolejte n&aacute;m:
+                    </p>
+                    <a href="tel:+420721173373" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 1.1rem;">
+                        721 173 373
+                    </a>
+                </div>
+
+                <div style="background: var(--dark-card); border-radius: var(--radius); padding: 28px; border: 1px solid var(--dark-border); margin-bottom: 20px;">
+                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 16px; color: var(--white);">Otev&iacute;rac&iacute; doba</h3>
+                    <div style="font-size: 0.9rem;">
+                        <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--dark-border);">
+                            <span style="color: var(--gray);">Po &ndash; P&aacute;</span>
+                            <span style="color: var(--gold);">11:00 &ndash; 22:00</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--dark-border);">
+                            <span style="color: var(--gray);">Sobota</span>
+                            <span style="color: var(--gold);">12:00 &ndash; 22:00</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 6px 0;">
+                            <span style="color: var(--gray);">Ned&ecaron;le</span>
+                            <span style="color: var(--gold);">12:00 &ndash; 21:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: var(--dark-card); border-radius: var(--radius); padding: 28px; border: 1px solid var(--dark-border);">
+                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px; color: var(--white);">Dobr&eacute; v&ecaron;d&ecaron;t</h3>
+                    <ul style="list-style: none; font-size: 0.85rem; color: var(--gray);">
+                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">&#10003; Rezervaci potvrd&iacute;me do 2 hodin</li>
+                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">&#10003; Skupiny 10+ osob kontaktujte telefonicky</li>
+                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">&#10003; D&ecaron;tsk&eacute; seda&ccaron;ky k dispozici</li>
+                        <li style="padding: 6px 0;">&#10003; Bezplatn&eacute; parkov&aacute;n&iacute; v bl&iacute;zkosti</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
 

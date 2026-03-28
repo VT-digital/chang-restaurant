@@ -15,7 +15,7 @@
     <nav id="navbar" class="navbar scrolled">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">
-                <img src="../img/logo.jpg" alt="Chang" style="height: 35px; border-radius: 4px;">
+                <img src="../img/logo-nav.png" alt="Chang Asian Cuisine" style="height: 40px;">
                 
             </a>
             <ul class="nav-menu">
@@ -58,20 +58,10 @@
                     </div>
 
                     <div class="contact-info-card">
-                        <div class="contact-info-icon">&#128340;</div>
-                        <div>
-                            <h4>Otev&iacute;rac&iacute; doba</h4>
-                            <p>Pond&ecaron;l&iacute; &ndash; P&aacute;tek: 11:00 &ndash; 22:00</p>
-                            <p>Sobota: 12:00 &ndash; 22:00</p>
-                            <p>Ned&ecaron;le: 12:00 &ndash; 21:00</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-card">
                         <div class="contact-info-icon">&#127760;</div>
                         <div>
                             <h4>Soci&aacute;ln&iacute; s&iacute;t&ecaron;</h4>
-                            <p><a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener">Facebook</a></p>
+                            <p><a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener">Facebook str&aacute;nka</a></p>
                         </div>
                     </div>
 
@@ -82,6 +72,44 @@
                             <p>Bezplatn&eacute; parkov&aacute;n&iacute; v bl&iacute;zkosti restaurace</p>
                         </div>
                     </div>
+
+                    <!-- Opening Hours Table -->
+                    <div style="margin-top: 30px;">
+                        <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 16px; color: var(--white);">Otev&iacute;rac&iacute; doba</h3>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="border-bottom: 1px solid var(--dark-border);">
+                                <td style="padding: 12px 0; color: var(--white);">Pond&ecaron;l&iacute;</td>
+                                <td style="padding: 12px 0; text-align: right; color: var(--gold);">11:00 &ndash; 22:00</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--dark-border);">
+                                <td style="padding: 12px 0; color: var(--white);">&Uacute;ter&yacute;</td>
+                                <td style="padding: 12px 0; text-align: right; color: var(--gold);">11:00 &ndash; 22:00</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--dark-border);">
+                                <td style="padding: 12px 0; color: var(--white);">St&rcaron;eda</td>
+                                <td style="padding: 12px 0; text-align: right; color: var(--gold);">11:00 &ndash; 22:00</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--dark-border);">
+                                <td style="padding: 12px 0; color: var(--white);">&Ccaron;tvrtek</td>
+                                <td style="padding: 12px 0; text-align: right; color: var(--gold);">11:00 &ndash; 22:00</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--dark-border);">
+                                <td style="padding: 12px 0; color: var(--white);">P&aacute;tek</td>
+                                <td style="padding: 12px 0; text-align: right; color: var(--gold);">11:00 &ndash; 22:00</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--dark-border);">
+                                <td style="padding: 12px 0; color: var(--white);">Sobota</td>
+                                <td style="padding: 12px 0; text-align: right; color: var(--gold);">12:00 &ndash; 22:00</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px 0; color: var(--white);">Ned&ecaron;le</td>
+                                <td style="padding: 12px 0; text-align: right; color: var(--gold);">12:00 &ndash; 21:00</td>
+                            </tr>
+                        </table>
+                        <p style="color: var(--gray); font-size: 0.8rem; margin-top: 12px;">
+                            Pol&eacute;dn&iacute; menu: Po&ndash;P&aacute; 11:00 &ndash; 15:00
+                        </p>
+                    </div>
                 </div>
 
                 <div>
@@ -91,6 +119,33 @@
                     <p style="color: var(--gray); font-size: 0.8rem; margin-top: 12px; text-align: center;">
                         Tr&zcaron;n&iacute; 421, 436 01 Horn&iacute; Litv&iacute;nov
                     </p>
+
+                    <!-- Contact Form -->
+                    <div style="margin-top: 40px; background: var(--dark-card); border-radius: var(--radius); padding: 30px; border: 1px solid var(--dark-border);">
+                        <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 20px; color: var(--white);">Napi&scaron;te n&aacute;m</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label" for="contact-name">Jm&eacute;no *</label>
+                                <input type="text" id="contact-name" name="name" class="form-input" required placeholder="Va&scaron;e jm&eacute;no">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-email">E-mail *</label>
+                                <input type="email" id="contact-email" name="email" class="form-input" required placeholder="vas@email.cz">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-phone">Telefon</label>
+                                <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+420 123 456 789">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-message">Zpr&aacute;va *</label>
+                                <textarea id="contact-message" name="message" class="form-textarea" required placeholder="Va&scaron;e zpr&aacute;va..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Odeslat zpr&aacute;vu</button>
+                            <p style="color: var(--gray); font-size: 0.75rem; text-align: center; margin-top: 12px;">
+                                Nebo n&aacute;m rovnou zavolejte na <a href="tel:+420721173373">721 173 373</a>
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
