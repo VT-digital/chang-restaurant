@@ -90,19 +90,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Reservation form ---
-    const reservationForm = document.getElementById('reservationForm');
-    if (reservationForm) {
-        reservationForm.addEventListener('submit', (e) => {
+    // --- Form submission handler (reservation + contact) ---
+    function handleFormSubmit(form, successMessage) {
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const formData = new FormData(reservationForm);
+            const formData = new FormData(form);
             const data = Object.fromEntries(formData);
 
-            // Show success
-            const btn = reservationForm.querySelector('.btn');
+            // TODO: Napojit na backend (API endpoint pro odesílání e-mailů / ukládání rezervací)
+            // fetch('/api/reservation', { method: 'POST', body: JSON.stringify(data), headers: { 'Content-Type': 'application/json' } })
+
+            const btn = form.querySelector('.btn[type="submit"], .btn');
             const originalText = btn.textContent;
-            btn.textContent = 'Odeslano! Budeme Vas kontaktovat.';
+            btn.textContent = successMessage;
             btn.style.background = '#27AE60';
             btn.disabled = true;
 
@@ -110,9 +111,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.textContent = originalText;
                 btn.style.background = '';
                 btn.disabled = false;
-                reservationForm.reset();
+                form.reset();
             }, 4000);
         });
+    }
+
+    const reservationForm = document.getElementById('reservationForm');
+    if (reservationForm) {
+        handleFormSubmit(reservationForm, 'Odesláno! Budeme Vás kontaktovat.');
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        handleFormSubmit(contactForm, 'Zpráva odeslána! Děkujeme.');
     }
 
     // --- Smooth scroll for anchor links ---

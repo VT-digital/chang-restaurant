@@ -1717,6 +1717,15 @@ img { max-width: 100%; height: auto; display: block; }
     line-height: 1.5;
 }
 
+@media (max-width: 1024px) {
+    .lunch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reels-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .lunch-grid {
         grid-template-columns: 1fr;
@@ -1732,15 +1741,6 @@ img { max-width: 100%; height: auto; display: block; }
     }
     .lunch-highlight-header {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 1024px) {
-    .lunch-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .reels-grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
 

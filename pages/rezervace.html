@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezervace | Chang Restaurant Litv&iacute;nov</title>
+    <title>Rezervace | Chang Asian Cuisine Litvínov</title>
+    <meta name="description" content="Rezervujte si stůl v restauraci Chang Asian Cuisine v Litvínově. Online rezervace nebo telefonicky na 721 173 373.">
+    <meta name="keywords" content="rezervace Chang Litvínov, rezervace stolu, thajská restaurace rezervace, online rezervace Litvínov">
+    <meta name="author" content="Chang Asian Cuisine">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chang-litvinov.cz/pages/rezervace.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rezervace | Chang Asian Cuisine Litvínov">
+    <meta property="og:description" content="Rezervujte si stůl v restauraci Chang Asian Cuisine v Litvínově. Online rezervace nebo telefonicky na 721 173 373.">
+    <meta property="og:image" content="https://chang-litvinov.cz/img/logo-full.png">
+    <meta property="og:url" content="https://chang-litvinov.cz/pages/rezervace.html">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="Chang Asian Cuisine">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rezervace | Chang Asian Cuisine Litvínov">
+    <meta name="twitter:description" content="Rezervujte si stůl v restauraci Chang Asian Cuisine v Litvínově. Online rezervace nebo telefonicky na 721 173 373.">
+    <meta name="twitter:image" content="https://chang-litvinov.cz/img/logo-full.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;family=Noto+Serif+SC:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
@@ -17,6 +38,12 @@
     </style>
 </head>
 <body>
+    <!-- Preview Banner -->
+    <div id="previewBanner" style="background: linear-gradient(135deg, #1a1a2e, #16213e); color: #a0a0b0; text-align: center; padding: 10px 24px; font-size: 0.8rem; border-bottom: 1px solid rgba(201,168,76,0.3); position: relative; z-index: 10001;">
+        <strong style="color: #C9A84C;">PREVIEW VERZE</strong> — Náhledová verze webu pro klienta. Fotografie budou nahrazeny reálnými snímky restaurace. Menu bude editovatelné přes administrační rozhraní.
+        <button onclick="this.parentElement.remove()" style="background: none; border: none; color: #666; cursor: pointer; margin-left: 12px; font-size: 1.1rem;" aria-label="Zavřít">&times;</button>
+    </div>
+
     <nav id="navbar" class="navbar scrolled">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">
@@ -38,7 +65,7 @@
     </nav>
 
     <section class="page-header">
-        <span class="section-tag">Rezervujte si st&#367;l</span>
+        <span class="section-tag">Rezervujte si stůl</span>
         <h1 class="section-title">Rezervace</h1>
     </section>
 
@@ -48,8 +75,8 @@
             <form class="reservation-form" id="reservationForm" data-aos="fade-up">
                 <div class="form-row">
                     <div class="form-group">
-                        <label class="form-label" for="name">Jm&eacute;no a p&rcaron;&iacute;jmen&iacute; *</label>
-                        <input type="text" id="name" name="name" class="form-input" required placeholder="Jan Nov&aacute;k">
+                        <label class="form-label" for="name">Jméno a příjmení *</label>
+                        <input type="text" id="name" name="name" class="form-input" required placeholder="Jan Novák">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="phone">Telefon *</label>
@@ -68,14 +95,14 @@
                         <input type="date" id="date" name="date" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="time">&Ccaron;as *</label>
+                        <label class="form-label" for="time">Čas *</label>
                         <input type="time" id="time" name="time" class="form-input" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label class="form-label" for="guests">Po&ccaron;et host&#367; *</label>
+                        <label class="form-label" for="guests">Počet hostů *</label>
                         <select id="guests" name="guests" class="form-select" required>
                             <option value="">Vyberte...</option>
                             <option value="1">1 osoba</option>
@@ -91,22 +118,22 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="occasion">P&rcaron;&iacute;le&zcaron;itost</label>
+                        <label class="form-label" for="occasion">Příležitost</label>
                         <select id="occasion" name="occasion" class="form-select">
-                            <option value="">Vyberte (nepovinn&eacute;)</option>
+                            <option value="">Vyberte (nepovinné)</option>
                             <option value="birthday">Narozeniny</option>
-                            <option value="anniversary">V&yacute;ro&ccaron;&iacute;</option>
-                            <option value="business">Pracovn&iacute; ob&ecaron;d/ve&ccaron;e&rcaron;e</option>
-                            <option value="date">Romantick&aacute; ve&ccaron;e&rcaron;e</option>
+                            <option value="anniversary">Výročí</option>
+                            <option value="business">Pracovní oběd/večeře</option>
+                            <option value="date">Romantická večeře</option>
                             <option value="celebration">Oslava</option>
-                            <option value="other">Jin&eacute;</option>
+                            <option value="other">Jiné</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="note">Pozn&aacute;mka</label>
-                    <textarea id="note" name="note" class="form-textarea" placeholder="Speci&aacute;ln&iacute; po&zcaron;adavky, alergie, d&ecaron;tsk&aacute; seda&ccaron;ka..."></textarea>
+                    <label class="form-label" for="note">Poznámka</label>
+                    <textarea id="note" name="note" class="form-textarea" placeholder="Speciální požadavky, alergie, dětská sedačka..."></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
@@ -114,7 +141,7 @@
                 </button>
 
                 <p style="color: var(--gray); font-size: 0.8rem; text-align: center; margin-top: 16px;">
-                    Rezervaci potvrd&iacute;me telefonicky nebo e-mailem do 2 hodin.
+                    Rezervaci potvrdíme telefonicky nebo e-mailem do 2 hodin.
                 </p>
             </form>
 
@@ -123,7 +150,7 @@
                 <div style="background: var(--dark-card); border-radius: var(--radius); padding: 28px; border: 1px solid var(--dark-border); margin-bottom: 20px;">
                     <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 16px; color: var(--white);">Rezervace telefonicky</h3>
                     <p style="color: var(--gray); font-size: 0.9rem; margin-bottom: 12px;">
-                        Preferujete osobn&iacute; p&rcaron;&iacute;stup? Zavolejte n&aacute;m:
+                        Preferujete osobní přístup? Zavolejte nám:
                     </p>
                     <a href="tel:+420721173373" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 1.1rem;">
                         721 173 373
@@ -131,30 +158,30 @@
                 </div>
 
                 <div style="background: var(--dark-card); border-radius: var(--radius); padding: 28px; border: 1px solid var(--dark-border); margin-bottom: 20px;">
-                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 16px; color: var(--white);">Otev&iacute;rac&iacute; doba</h3>
+                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 16px; color: var(--white);">Otevírací doba</h3>
                     <div style="font-size: 0.9rem;">
                         <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--dark-border);">
-                            <span style="color: var(--gray);">Po &ndash; P&aacute;</span>
-                            <span style="color: var(--gold);">11:00 &ndash; 22:00</span>
+                            <span style="color: var(--gray);">Po – Pá</span>
+                            <span style="color: var(--gold);">11:00 – 22:00</span>
                         </div>
                         <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--dark-border);">
                             <span style="color: var(--gray);">Sobota</span>
-                            <span style="color: var(--gold);">12:00 &ndash; 22:00</span>
+                            <span style="color: var(--gold);">12:00 – 22:00</span>
                         </div>
                         <div style="display: flex; justify-content: space-between; padding: 6px 0;">
-                            <span style="color: var(--gray);">Ned&ecaron;le</span>
-                            <span style="color: var(--gold);">12:00 &ndash; 21:00</span>
+                            <span style="color: var(--gray);">Neděle</span>
+                            <span style="color: var(--gold);">12:00 – 21:00</span>
                         </div>
                     </div>
                 </div>
 
                 <div style="background: var(--dark-card); border-radius: var(--radius); padding: 28px; border: 1px solid var(--dark-border);">
-                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px; color: var(--white);">Dobr&eacute; v&ecaron;d&ecaron;t</h3>
+                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px; color: var(--white);">Dobré vědět</h3>
                     <ul style="list-style: none; font-size: 0.85rem; color: var(--gray);">
-                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">&#10003; Rezervaci potvrd&iacute;me do 2 hodin</li>
-                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">&#10003; Skupiny 10+ osob kontaktujte telefonicky</li>
-                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">&#10003; D&ecaron;tsk&eacute; seda&ccaron;ky k dispozici</li>
-                        <li style="padding: 6px 0;">&#10003; Bezplatn&eacute; parkov&aacute;n&iacute; v bl&iacute;zkosti</li>
+                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">✓ Rezervaci potvrdíme do 2 hodin</li>
+                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">✓ Skupiny 10+ osob kontaktujte telefonicky</li>
+                        <li style="padding: 6px 0; border-bottom: 1px solid var(--dark-border);">✓ Dětské sedačky k dispozici</li>
+                        <li style="padding: 6px 0;">✓ Bezplatné parkování v blízkosti</li>
                     </ul>
                 </div>
             </div>
@@ -164,12 +191,49 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-                <p>&copy; 2026 Chang Restaurant Litv&iacute;nov. V&scaron;echna pr&aacute;va vyhrazena.</p>
-                <a href="../index.html" class="nav-logo" style="gap: 8px;">
-                    <span class="logo-chinese" style="font-size: 1.2rem;">&#38271;</span>
-                    <span class="logo-text" style="font-size: 1rem; letter-spacing: 4px;">CHANG</span>
-                </a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo" style="text-align: center;">
+                        <img src="../img/logo-clean.png" alt="Chang Asian Cuisine" style="height: 65px; display: block; margin: 0 auto 12px;">
+                    </div>
+                    <p>Autentické chutě Thajska v Litvínově</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram (připravujeme)" class="social-link instagram" title="Instagram — připravujeme">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigace</h4>
+                    <ul>
+                        <li><a href="../index.html">Domov</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="recenze.html">Recenze</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Otevírací doba</h4>
+                    <ul>
+                        <li><span>Pondělí – Pátek</span> <span>11:00 – 22:00</span></li>
+                        <li><span>Sobota</span> <span>12:00 – 22:00</span></li>
+                        <li><span>Neděle</span> <span>12:00 – 21:00</span></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>Tržní 421, 436 01 Horní Litvínov</p>
+                    <p><a href="tel:+420721173373">721 173 373</a></p>
+                    <p><a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener">Facebook</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Chang Restaurant Litvínov. Všechna práva vyhrazena.</p>
+                <p class="footer-credit">Web vytvořil <a href="https://vt-digital.cz" target="_blank" rel="noopener" style="color: var(--gold);">VT Digital</a></p>
             </div>
         </div>
     </footer>

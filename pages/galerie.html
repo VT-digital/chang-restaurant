@@ -3,15 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie | Chang Restaurant Litv&iacute;nov</title>
+    <title>Galerie | Chang Asian Cuisine Litvínov</title>
+    <meta name="description" content="Fotogalerie restaurace Chang Asian Cuisine v Litvínově. Interiér, jídla, nápoje a atmosféra naší restaurace.">
+    <meta name="keywords" content="Chang Litvínov fotky, galerie restaurace, asijská restaurace interiér, thajské jídlo fotky">
+    <meta name="author" content="Chang Asian Cuisine">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chang-litvinov.cz/pages/galerie.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Galerie | Chang Asian Cuisine Litvínov">
+    <meta property="og:description" content="Fotogalerie restaurace Chang Asian Cuisine v Litvínově. Interiér, jídla, nápoje a atmosféra naší restaurace.">
+    <meta property="og:image" content="https://chang-litvinov.cz/img/logo-full.png">
+    <meta property="og:url" content="https://chang-litvinov.cz/pages/galerie.html">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="Chang Asian Cuisine">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galerie | Chang Asian Cuisine Litvínov">
+    <meta name="twitter:description" content="Fotogalerie restaurace Chang Asian Cuisine v Litvínově. Interiér, jídla, nápoje a atmosféra naší restaurace.">
+    <meta name="twitter:image" content="https://chang-litvinov.cz/img/logo-full.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;family=Noto+Serif+SC:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
 </head>
 <body>
+    <!-- Preview Banner -->
+    <div id="previewBanner" style="background: linear-gradient(135deg, #1a1a2e, #16213e); color: #a0a0b0; text-align: center; padding: 10px 24px; font-size: 0.8rem; border-bottom: 1px solid rgba(201,168,76,0.3); position: relative; z-index: 10001;">
+        <strong style="color: #C9A84C;">PREVIEW VERZE</strong> — Náhledová verze webu pro klienta. Fotografie budou nahrazeny reálnými snímky restaurace. Menu bude editovatelné přes administrační rozhraní.
+        <button onclick="this.parentElement.remove()" style="background: none; border: none; color: #666; cursor: pointer; margin-left: 12px; font-size: 1.1rem;" aria-label="Zavřít">&times;</button>
+    </div>
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar scrolled">
         <div class="nav-container">
@@ -43,86 +70,86 @@
     <section class="section">
         <div class="container">
             <div class="menu-categories" data-aos="fade-up" style="margin-bottom: 40px;">
-                <button class="menu-category-btn active" onclick="filterGallery('all', this)">V&scaron;e</button>
-                <button class="menu-category-btn" onclick="filterGallery('interior', this)">Interi&eacute;r</button>
-                <button class="menu-category-btn" onclick="filterGallery('food', this)">J&iacute;dla</button>
-                <button class="menu-category-btn" onclick="filterGallery('drinks', this)">N&aacute;poje</button>
-                <button class="menu-category-btn" onclick="filterGallery('team', this)">T&yacute;m</button>
+                <button class="menu-category-btn active" onclick="filterGallery('all', this)">Vše</button>
+                <button class="menu-category-btn" onclick="filterGallery('interior', this)">Interiér</button>
+                <button class="menu-category-btn" onclick="filterGallery('food', this)">Jídla</button>
+                <button class="menu-category-btn" onclick="filterGallery('drinks', this)">Nápoje</button>
+                <button class="menu-category-btn" onclick="filterGallery('team', this)">Tým</button>
             </div>
 
             <div class="gallery-grid" data-aos="fade-up">
-                <div class="gallery-item" data-category="interior" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=900&fit=crop" data-caption="Interi&eacute;r restaurace">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=900&fit=crop" alt="Interi&eacute;r Chang Asian Cuisine" loading="lazy">
-                    <div class="gallery-item-overlay"><span>Interi&eacute;r</span></div>
+                <div class="gallery-item" data-category="interior" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&amp;h=900&amp;fit=crop" data-caption="Interiér restaurace">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&amp;h=900&amp;fit=crop" alt="Interiér Chang Asian Cuisine" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Interiér</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&h=800&fit=crop" data-caption="Pad Thai">
-                    <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&h=800&fit=crop" alt="Pad Thai" loading="lazy">
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&amp;h=800&amp;fit=crop" data-caption="Pad Thai">
+                    <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&amp;h=800&amp;fit=crop" alt="Pad Thai" loading="lazy">
                     <div class="gallery-item-overlay"><span>Pad Thai</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=800&h=800&fit=crop" data-caption="Tom Yum pol&eacute;vka">
-                    <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=800&h=800&fit=crop" alt="Tom Yum pol&eacute;vka" loading="lazy">
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=800&amp;h=800&amp;fit=crop" data-caption="Tom Yum polévka">
+                    <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=800&amp;h=800&amp;fit=crop" alt="Tom Yum polévka" loading="lazy">
                     <div class="gallery-item-overlay"><span>Tom Yum</span></div>
                 </div>
-                <div class="gallery-item" data-category="interior" data-src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=800&fit=crop" data-caption="Bar">
-                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=800&fit=crop" alt="Bar" loading="lazy">
+                <div class="gallery-item" data-category="interior" data-src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&amp;h=800&amp;fit=crop" data-caption="Bar">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&amp;h=800&amp;fit=crop" alt="Bar" loading="lazy">
                     <div class="gallery-item-overlay"><span>Bar</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&h=800&fit=crop" data-caption="Sushi set">
-                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&h=800&fit=crop" alt="Sushi set" loading="lazy">
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&amp;h=800&amp;fit=crop" data-caption="Sushi set">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&amp;h=800&amp;fit=crop" alt="Sushi set" loading="lazy">
                     <div class="gallery-item-overlay"><span>Sushi</span></div>
                 </div>
-                <div class="gallery-item" data-category="drinks" data-src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=800&h=800&fit=crop" data-caption="Bubble Tea">
-                    <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=800&h=800&fit=crop" alt="Bubble Tea" loading="lazy">
+                <div class="gallery-item" data-category="drinks" data-src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=800&amp;h=800&amp;fit=crop" data-caption="Bubble Tea">
+                    <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=800&amp;h=800&amp;fit=crop" alt="Bubble Tea" loading="lazy">
                     <div class="gallery-item-overlay"><span>Bubble Tea</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&h=800&fit=crop" data-caption="Green Curry">
-                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&h=800&fit=crop" alt="Green Curry" loading="lazy">
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&amp;h=800&amp;fit=crop" data-caption="Green Curry">
+                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&amp;h=800&amp;fit=crop" alt="Green Curry" loading="lazy">
                     <div class="gallery-item-overlay"><span>Green Curry</span></div>
                 </div>
-                <div class="gallery-item" data-category="team" data-src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&h=800&fit=crop" data-caption="N&aacute;&scaron; t&yacute;m">
-                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&h=800&fit=crop" alt="N&aacute;&scaron; t&yacute;m" loading="lazy">
-                    <div class="gallery-item-overlay"><span>T&yacute;m</span></div>
+                <div class="gallery-item" data-category="team" data-src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&amp;h=800&amp;fit=crop" data-caption="Náš tým">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&amp;h=800&amp;fit=crop" alt="Náš tým" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Tým</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?w=800&h=800&fit=crop" data-caption="Kachna &mdash; Bun Ngan">
-                    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?w=800&h=800&fit=crop" alt="Kachna Bun Ngan" loading="lazy">
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?w=800&amp;h=800&amp;fit=crop" data-caption="Kachna — Bun Ngan">
+                    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?w=800&amp;h=800&amp;fit=crop" alt="Kachna Bun Ngan" loading="lazy">
                     <div class="gallery-item-overlay"><span>Bun Ngan</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=800&fit=crop" data-caption="Udon nudle">
-                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=800&fit=crop" alt="Udon nudle Chiang Mai" loading="lazy">
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&amp;h=800&amp;fit=crop" data-caption="Udon nudle">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&amp;h=800&amp;fit=crop" alt="Udon nudle Chiang Mai" loading="lazy">
                     <div class="gallery-item-overlay"><span>Udon</span></div>
                 </div>
-                <div class="gallery-item" data-category="interior" data-src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&h=800&fit=crop" data-caption="Restaurace &mdash; stolov&aacute;n&iacute;">
-                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&h=800&fit=crop" alt="Stolov&aacute;n&iacute;" loading="lazy">
-                    <div class="gallery-item-overlay"><span>Stolov&aacute;n&iacute;</span></div>
+                <div class="gallery-item" data-category="interior" data-src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&amp;h=800&amp;fit=crop" data-caption="Restaurace — stolování">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&amp;h=800&amp;fit=crop" alt="Stolování" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Stolování</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&h=800&fit=crop" data-caption="Red Curry">
-                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&h=800&fit=crop" alt="Red Curry Kaeng Ped" loading="lazy">
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&amp;h=800&amp;fit=crop" data-caption="Red Curry">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&amp;h=800&amp;fit=crop" alt="Red Curry Kaeng Ped" loading="lazy">
                     <div class="gallery-item-overlay"><span>Kaeng Ped</span></div>
                 </div>
-                <div class="gallery-item" data-category="drinks" data-src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=800&fit=crop" data-caption="Kokteily">
-                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=800&fit=crop" alt="Kokteily" loading="lazy">
+                <div class="gallery-item" data-category="drinks" data-src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&amp;h=800&amp;fit=crop" data-caption="Kokteily">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&amp;h=800&amp;fit=crop" alt="Kokteily" loading="lazy">
                     <div class="gallery-item-overlay"><span>Kokteily</span></div>
                 </div>
-                <div class="gallery-item" data-category="team" data-src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=800&fit=crop" data-caption="Kuch&yacute;n&ecaron; v akci">
-                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=800&fit=crop" alt="Kuch&yacute;n&ecaron; v akci" loading="lazy">
-                    <div class="gallery-item-overlay"><span>Kuch&yacute;n&ecaron;</span></div>
+                <div class="gallery-item" data-category="team" data-src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&amp;h=800&amp;fit=crop" data-caption="Kuchýně v akci">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&amp;h=800&amp;fit=crop" alt="Kuchýně v akci" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Kuchýně</span></div>
                 </div>
-                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800&h=800&fit=crop" data-caption="Spring rolls">
-                    <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800&h=800&fit=crop" alt="Jarn&iacute; z&aacute;vitky" loading="lazy">
-                    <div class="gallery-item-overlay"><span>Z&aacute;vitky</span></div>
+                <div class="gallery-item" data-category="food" data-src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800&amp;h=800&amp;fit=crop" data-caption="Spring rolls">
+                    <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800&amp;h=800&amp;fit=crop" alt="Jarní závitky" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Závitky</span></div>
                 </div>
             </div>
 
             <!-- Lightbox -->
             <div class="lightbox" id="lightbox">
-                <button class="lightbox-close" id="lightboxClose" aria-label="Zav&rcaron;&iacute;t">&times;</button>
+                <button class="lightbox-close" id="lightboxClose" aria-label="Zavřít">×</button>
                 <img src="" alt="" id="lightboxImg">
                 <div class="lightbox-caption" id="lightboxCaption"></div>
             </div>
 
             <div class="section-cta" style="margin-top: 50px;">
                 <p style="color: var(--gray); font-size: 0.9rem; margin-bottom: 16px;">
-                    V&iacute;ce fotek najdete na na&scaron;em Facebooku
+                    Více fotek najdete na našem Facebooku
                 </p>
                 <a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener" class="btn btn-outline">
                     Facebook galerie
@@ -135,9 +162,9 @@
     <section class="section section-dark fb-feed-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Soci&aacute;ln&iacute; s&iacute;t&ecaron;</span>
-                <h2 class="section-title">Sledujte n&aacute;s na <em>Facebooku</em></h2>
-                <p style="color: var(--gray); margin-top: 10px;">Nejnov&ecaron;j&scaron;&iacute; p&rcaron;&iacute;sp&ecaron;vky z na&scaron;&iacute; str&aacute;nky</p>
+                <span class="section-tag">Sociální sítě</span>
+                <h2 class="section-title">Sledujte nás na <em>Facebooku</em></h2>
+                <p style="color: var(--gray); margin-top: 10px;">Nejnovější příspěvky z naší stránky</p>
             </div>
 
             <div class="fb-posts-grid" data-aos="fade-up">
@@ -146,30 +173,30 @@
                         <div class="fb-post-avatar">C</div>
                         <div class="fb-post-meta">
                             <strong>Chang Restaurant</strong>
-                            <span>P&rcaron;&iacute;sp&ecaron;vek z Facebooku</span>
+                            <span>Příspěvek z Facebooku</span>
                         </div>
                     </div>
-                    <p class="fb-post-text">Sledujte na&scaron;e denn&iacute; menu a speci&aacute;ln&iacute; nab&iacute;dky p&rcaron;&iacute;mo na na&scaron;em Facebooku! Ka&zcaron;d&yacute; den pro v&aacute;s p&rcaron;ipravujeme &ccaron;erstv&aacute; j&iacute;dla.</p>
+                    <p class="fb-post-text">Sledujte naše denní menu a speciální nabídky přímo na našem Facebooku! Každý den pro vás připravujeme čerstvá jídla.</p>
                 </div>
                 <div class="fb-post-card">
                     <div class="fb-post-header">
                         <div class="fb-post-avatar">C</div>
                         <div class="fb-post-meta">
                             <strong>Chang Restaurant</strong>
-                            <span>P&rcaron;&iacute;sp&ecaron;vek z Facebooku</span>
+                            <span>Příspěvek z Facebooku</span>
                         </div>
                     </div>
-                    <p class="fb-post-text">Nov&eacute; menu p&rcaron;ipraveno! P&rcaron;ij&deg;te ochutnat na&scaron;e &ccaron;erstv&eacute; speciality. T&ecaron;&scaron;&iacute;me se na v&aacute;s!</p>
+                    <p class="fb-post-text">Nové menu připraveno! Přijďte ochutnat naše čerstvé speciality. Těšíme se na vás!</p>
                 </div>
                 <div class="fb-post-card">
                     <div class="fb-post-header">
                         <div class="fb-post-avatar">C</div>
                         <div class="fb-post-meta">
                             <strong>Chang Restaurant</strong>
-                            <span>P&rcaron;&iacute;sp&ecaron;vek z Facebooku</span>
+                            <span>Příspěvek z Facebooku</span>
                         </div>
                     </div>
-                    <p class="fb-post-text">D&ecaron;kujeme v&scaron;em za n&aacute;v&scaron;t&ecaron;vu a kr&aacute;sn&eacute; recenze! Va&scaron;e podpora n&aacute;s m&oacute;tivuje p&rcaron;ipravovat st&aacute;le lep&scaron;&iacute; j&iacute;dla.</p>
+                    <p class="fb-post-text">Děkujeme všem za návštěvu a krásné recenze! Vaše podpora nás mótivuje připravovat stále lepší jídla.</p>
                 </div>
             </div>
 
@@ -184,12 +211,49 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-                <p>&copy; 2026 Chang Restaurant Litv&iacute;nov. V&scaron;echna pr&aacute;va vyhrazena.</p>
-                <a href="../index.html" class="nav-logo" style="gap: 8px;">
-                    <span class="logo-chinese" style="font-size: 1.2rem;">&#38271;</span>
-                    <span class="logo-text" style="font-size: 1rem; letter-spacing: 4px;">CHANG</span>
-                </a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo" style="text-align: center;">
+                        <img src="../img/logo-clean.png" alt="Chang Asian Cuisine" style="height: 65px; display: block; margin: 0 auto 12px;">
+                    </div>
+                    <p>Autentické chutě Thajska v Litvínově</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram (připravujeme)" class="social-link instagram" title="Instagram — připravujeme">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigace</h4>
+                    <ul>
+                        <li><a href="../index.html">Domov</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="recenze.html">Recenze</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Otevírací doba</h4>
+                    <ul>
+                        <li><span>Pondělí – Pátek</span> <span>11:00 – 22:00</span></li>
+                        <li><span>Sobota</span> <span>12:00 – 22:00</span></li>
+                        <li><span>Neděle</span> <span>12:00 – 21:00</span></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>Tržní 421, 436 01 Horní Litvínov</p>
+                    <p><a href="tel:+420721173373">721 173 373</a></p>
+                    <p><a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener">Facebook</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Chang Restaurant Litvínov. Všechna práva vyhrazena.</p>
+                <p class="footer-credit">Web vytvořil <a href="https://vt-digital.cz" target="_blank" rel="noopener" style="color: var(--gold);">VT Digital</a></p>
             </div>
         </div>
     </footer>
