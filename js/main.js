@@ -142,3 +142,72 @@ document.addEventListener('DOMContentLoaded', () => {
 const style = document.createElement('style');
 style.textContent = '@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }';
 document.head.appendChild(style);
+
+/* ========================================
+   Copy Protection (preview verze)
+   ======================================== */
+(function() {
+    if (!document.body.classList.contains('has-preview-banner')) return;
+
+    // Console warning
+    const consoleStyle = 'color: #C9A84C; font-size: 18px; font-weight: bold; padding: 10px;';
+    const subStyle = 'color: #999; font-size: 12px;';
+    console.log('%c⚠ AUTORSKÉ PRÁVO', consoleStyle);
+    console.log('%cTento web je preview verze ve vlastnictví VT-DIGITAL.CZ.\nNeoprávněné kopírování, úprava nebo redistribuce obsahu jsou zakázány.\nKontakt: https://vt-digital.cz', subStyle);
+
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    });
+
+    // Disable image dragging
+    document.addEventListener('dragstart', function(e) {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // Block keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+        // F12 — DevTools
+        if (e.key === 'F12') {
+            e.preventDefault();
+            return false;
+        }
+
+        // Ctrl+U / Cmd+U — View source
+        if ((e.ctrlKey || e.metaKey) && e.key === 'u') {
+            e.preventDefault();
+            return false;
+        }
+
+        // Ctrl+S / Cmd+S — Save page
+        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+            e.preventDefault();
+            return false;
+        }
+
+        // Ctrl+Shift+I/J/C / Cmd+Opt+I/J/C — DevTools
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'J', 'C', 'i', 'j', 'c'].includes(e.key)) {
+            e.preventDefault();
+            return false;
+        }
+
+        // Ctrl+P / Cmd+P — Print
+        if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // Disable text selection via JS as additional layer
+    document.addEventListener('selectstart', function(e) {
+        const tag = e.target.tagName;
+        if (tag !== 'INPUT' && tag !== 'TEXTAREA' && tag !== 'SELECT') {
+            e.preventDefault();
+            return false;
+        }
+    });
+})();

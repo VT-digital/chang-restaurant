@@ -2028,6 +2028,39 @@ img { max-width: 100%; height: auto; display: block; }
     }
 }
 
+/* --- Copy Protection (preview verze) --- */
+body.has-preview-banner {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+body.has-preview-banner img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+}
+
+/* Allow clicks on linked images */
+body.has-preview-banner a img {
+    pointer-events: auto;
+}
+
+/* Allow text selection in form fields */
+body.has-preview-banner input,
+body.has-preview-banner textarea,
+body.has-preview-banner select {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
 /* --- Preview Banner (VT-DIGITAL standard) --- */
 #previewBanner {
     position: fixed;
