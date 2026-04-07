@@ -1809,3 +1809,221 @@ img { max-width: 100%; height: auto; display: block; }
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Polední menu page --- */
+.poledni-category {
+    margin-bottom: 60px;
+}
+
+.poledni-category-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.poledni-category-icon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 168, 76, 0.1);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-radius: var(--radius);
+}
+
+.poledni-category-header h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0;
+}
+
+.poledni-category-en {
+    font-size: 1.2rem;
+    color: var(--gold);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.poledni-category-note {
+    font-size: 0.85rem;
+    color: var(--gold);
+    font-style: italic;
+    margin-bottom: 24px;
+    margin-top: -10px;
+}
+
+.poledni-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.poledni-item {
+    padding: 24px;
+    background: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.poledni-item:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+}
+
+.poledni-item.featured {
+    background: linear-gradient(135deg, var(--dark-surface) 0%, rgba(201, 168, 76, 0.08) 100%);
+    border-color: rgba(201, 168, 76, 0.4);
+}
+
+.poledni-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.poledni-item-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--white);
+    margin: 0;
+}
+
+.poledni-allergens {
+    font-size: 0.75rem;
+    color: var(--gray);
+    font-weight: 400;
+    font-family: var(--font-body);
+    font-style: normal;
+}
+
+.poledni-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gold);
+    white-space: nowrap;
+}
+
+.poledni-desc {
+    font-size: 0.9rem;
+    color: var(--gray-light);
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.poledni-desc-en {
+    font-size: 0.8rem;
+    color: var(--gray);
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.poledni-variants {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--dark-border);
+}
+
+.poledni-variant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.poledni-variant span {
+    color: var(--gray-light);
+}
+
+.poledni-variant strong {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.poledni-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+    padding: 32px;
+    background: linear-gradient(135deg, var(--dark-surface) 0%, rgba(201, 168, 76, 0.05) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-radius: var(--radius);
+}
+
+.poledni-info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.poledni-info-icon {
+    font-size: 1.8rem;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 168, 76, 0.1);
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.poledni-info-item strong {
+    display: block;
+    color: var(--white);
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.poledni-info-item p {
+    color: var(--gray);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.poledni-info-item a {
+    color: var(--gold);
+}
+
+.poledni-allergens-note {
+    margin-top: 32px;
+    padding: 20px;
+    background: var(--dark-surface);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    color: var(--gray);
+    text-align: center;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .poledni-items {
+        grid-template-columns: 1fr;
+    }
+    .poledni-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .poledni-category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .poledni-category-header h2 {
+        font-size: 1.6rem;
+    }
+}
