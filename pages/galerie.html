@@ -32,11 +32,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
 </head>
-<body>
-    <!-- Preview Banner -->
-    <div id="previewBanner" style="background: linear-gradient(135deg, #1a1a2e, #16213e); color: #a0a0b0; text-align: center; padding: 10px 24px; font-size: 0.8rem; border-bottom: 1px solid rgba(201,168,76,0.3); position: relative; z-index: 10001;">
-        <strong style="color: #C9A84C;">PREVIEW VERZE</strong> — Náhledová verze webu pro klienta. Fotografie budou nahrazeny reálnými snímky restaurace. Menu bude editovatelné přes administrační rozhraní.
-        <button onclick="this.parentElement.remove()" style="background: none; border: none; color: #666; cursor: pointer; margin-left: 12px; font-size: 1.1rem;" aria-label="Zavřít">&times;</button>
+<body class="has-preview-banner">
+    <!-- Preview Banner (VT-DIGITAL standard) -->
+    <div id="previewBanner">
+        <strong>PREVIEW VERZE</strong> — Toto je ukázka webu. Vytvořil Vojtěch Titlbach — <a href="https://vt-digital.cz" target="_blank" rel="noopener">VT-DIGITAL.CZ</a>
+        <span class="preview-divider">•</span>
+        Náhledová verze webu pro klienta — fotografie budou nahrazeny reálnými snímky restaurace, menu bude editovatelné přes administrační rozhraní.
     </div>
 
     <!-- Navigation -->
