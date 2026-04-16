@@ -83,6 +83,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <style>
+        #recenze-sekce { background: #111111; padding: 100px 0; }
+        #recenze-sekce .rs-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center; }
+        #recenze-sekce .rs-tag { display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9A84C; border: 1px solid #C9A84C; padding: 6px 20px; border-radius: 30px; margin-bottom: 20px; }
+        #recenze-sekce .rs-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 400; color: #FAFAFA; margin-bottom: 24px; }
+        #recenze-sekce .rs-score { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 60px; }
+        #recenze-sekce .rs-score-num { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 700; color: #C9A84C; line-height: 1; }
+        #recenze-sekce .rs-stars { font-size: 1.5rem; color: #C9A84C; letter-spacing: 3px; margin-bottom: 4px; }
+        #recenze-sekce .rs-score-sub { color: #999; font-size: 0.85rem; text-align: left; }
+        #recenze-sekce .rs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 50px; }
+        #recenze-sekce .rs-card { background: #1E1E1E; border: 1px solid #2A2A2A; border-radius: 12px; padding: 32px 28px; text-align: left; transition: border-color 0.3s, transform 0.3s; }
+        #recenze-sekce .rs-card:hover { border-color: #C9A84C; transform: translateY(-4px); }
+        #recenze-sekce .rs-card-stars { color: #C9A84C; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 16px; }
+        #recenze-sekce .rs-card-text { font-family: 'Playfair Display', serif; font-style: italic; color: #CCCCCC; font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px; min-height: 80px; }
+        #recenze-sekce .rs-author { display: flex; align-items: center; gap: 12px; }
+        #recenze-sekce .rs-avatar { width: 40px; height: 40px; min-width: 40px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #A68A3E); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; color: #0A0A0A; }
+        #recenze-sekce .rs-name { font-weight: 600; color: #FAFAFA; font-size: 0.9rem; margin-bottom: 2px; }
+        #recenze-sekce .rs-source { color: #999; font-size: 0.8rem; }
+        @media (max-width: 900px) { #recenze-sekce .rs-grid { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body class="has-preview-banner">
     <!-- Preview Banner (VT-DIGITAL standard) -->
@@ -378,25 +398,6 @@
     </section>
 
     <!-- Recenze -->
-    <style>
-        #recenze-sekce { background: #111111; padding: 100px 0; }
-        #recenze-sekce .rs-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center; }
-        #recenze-sekce .rs-tag { display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9A84C; border: 1px solid #C9A84C; padding: 6px 20px; border-radius: 30px; margin-bottom: 20px; }
-        #recenze-sekce .rs-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 400; color: #FAFAFA; margin-bottom: 24px; }
-        #recenze-sekce .rs-score { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 60px; }
-        #recenze-sekce .rs-score-num { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 700; color: #C9A84C; line-height: 1; }
-        #recenze-sekce .rs-stars { font-size: 1.5rem; color: #C9A84C; letter-spacing: 3px; margin-bottom: 4px; }
-        #recenze-sekce .rs-score-sub { color: #999; font-size: 0.85rem; text-align: left; }
-        #recenze-sekce .rs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 50px; }
-        #recenze-sekce .rs-card { background: #1E1E1E; border: 1px solid #2A2A2A; border-radius: 12px; padding: 32px 28px; text-align: left; }
-        #recenze-sekce .rs-card-stars { color: #C9A84C; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 16px; }
-        #recenze-sekce .rs-card-text { font-family: 'Playfair Display', serif; font-style: italic; color: #CCCCCC; font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px; min-height: 80px; }
-        #recenze-sekce .rs-author { display: flex; align-items: center; gap: 12px; }
-        #recenze-sekce .rs-avatar { width: 40px; height: 40px; min-width: 40px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #A68A3E); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; color: #0A0A0A; }
-        #recenze-sekce .rs-name { font-weight: 600; color: #FAFAFA; font-size: 0.9rem; margin-bottom: 2px; }
-        #recenze-sekce .rs-source { color: #999; font-size: 0.8rem; }
-        @media (max-width: 768px) { #recenze-sekce .rs-grid { grid-template-columns: 1fr; } }
-    </style>
     <section id=”recenze-sekce”>
         <div class=”rs-wrap”>
             <span class=”rs-tag”>Recenze hostů</span>
