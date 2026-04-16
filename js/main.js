@@ -139,15 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Force Elfsight re-init po načtení stránky (preloader může blokovat první init)
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        if (window.ElfsightPlatform) {
-            window.ElfsightPlatform.reload();
-        }
-    }, 500);
-});
-
 // Fade in animation for menu filter
 const style = document.createElement('style');
 style.textContent = '@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }';
