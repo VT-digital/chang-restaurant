@@ -84,24 +84,49 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <style>
-        #recenze-sekce { background: #111111; padding: 100px 0; }
-        #recenze-sekce .rs-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center; }
-        #recenze-sekce .rs-tag { display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9A84C; border: 1px solid #C9A84C; padding: 6px 20px; border-radius: 30px; margin-bottom: 20px; }
-        #recenze-sekce .rs-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 400; color: #FAFAFA; margin-bottom: 24px; }
-        #recenze-sekce .rs-score { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 60px; }
-        #recenze-sekce .rs-score-num { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 700; color: #C9A84C; line-height: 1; }
-        #recenze-sekce .rs-stars { font-size: 1.5rem; color: #C9A84C; letter-spacing: 3px; margin-bottom: 4px; }
-        #recenze-sekce .rs-score-sub { color: #999; font-size: 0.85rem; text-align: left; }
-        #recenze-sekce .rs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 50px; }
-        #recenze-sekce .rs-card { background: #1E1E1E; border: 1px solid #2A2A2A; border-radius: 12px; padding: 32px 28px; text-align: left; transition: border-color 0.3s, transform 0.3s; }
-        #recenze-sekce .rs-card:hover { border-color: #C9A84C; transform: translateY(-4px); }
-        #recenze-sekce .rs-card-stars { color: #C9A84C; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 16px; }
-        #recenze-sekce .rs-card-text { font-family: 'Playfair Display', serif; font-style: italic; color: #CCCCCC; font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px; min-height: 80px; }
-        #recenze-sekce .rs-author { display: flex; align-items: center; gap: 12px; }
-        #recenze-sekce .rs-avatar { width: 40px; height: 40px; min-width: 40px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #A68A3E); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; color: #0A0A0A; }
-        #recenze-sekce .rs-name { font-weight: 600; color: #FAFAFA; font-size: 0.9rem; margin-bottom: 2px; }
-        #recenze-sekce .rs-source { color: #999; font-size: 0.8rem; }
-        @media (max-width: 900px) { #recenze-sekce .rs-grid { grid-template-columns: 1fr; } }
+        /* ── Recenze sekce ── */
+        #rs { background: #0F0F0F; padding: 100px 0; }
+        #rs .rs-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hlavička */
+        #rs .rs-header { text-align: center; margin-bottom: 64px; }
+        #rs .rs-label { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9A84C; border: 1px solid rgba(201,168,76,.4); padding: 6px 20px; border-radius: 30px; margin-bottom: 18px; }
+        #rs .rs-h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400; color: #FAFAFA; margin-bottom: 28px; line-height: 1.3; }
+        #rs .rs-h2 em { color: #C9A84C; font-style: italic; }
+
+        /* Score badge */
+        #rs .rs-badge { display: inline-flex; align-items: center; gap: 20px; background: #1A1A1A; border: 1px solid rgba(201,168,76,.25); border-radius: 60px; padding: 18px 36px; }
+        #rs .rs-big-num { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 700; color: #C9A84C; line-height: 1; }
+        #rs .rs-badge-right { text-align: left; }
+        #rs .rs-badge-stars { font-size: 1.2rem; color: #C9A84C; letter-spacing: 2px; line-height: 1; margin-bottom: 5px; }
+        #rs .rs-badge-sub { font-size: 0.8rem; color: #777; }
+
+        /* Kartičky — flexbox, 3 sloupce */
+        #rs .rs-cards { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 20px; margin-top: 56px; margin-bottom: 50px; }
+        #rs .rs-card { -webkit-box-flex: 1; -ms-flex: 1 1 calc(33.333% - 14px); flex: 1 1 calc(33.333% - 14px); min-width: 260px; background: #191919; border: 1px solid #2A2A2A; border-radius: 14px; padding: 32px 28px; position: relative; -webkit-transition: border-color .3s, -webkit-transform .3s; transition: border-color .3s, transform .3s; }
+        #rs .rs-card:hover { border-color: #C9A84C; -webkit-transform: translateY(-5px); transform: translateY(-5px); }
+
+        /* Velký citát symbol */
+        #rs .rs-card::before { content: '\201E'; font-family: 'Playfair Display', serif; font-size: 5rem; color: rgba(201,168,76,.15); position: absolute; top: 12px; right: 20px; line-height: 1; }
+
+        #rs .rs-card-stars { color: #C9A84C; font-size: 0.95rem; letter-spacing: 3px; margin-bottom: 16px; }
+        #rs .rs-card-text { font-family: 'Playfair Display', serif; font-style: italic; color: #BDBDBD; font-size: 0.95rem; line-height: 1.75; margin-bottom: 28px; padding-right: 20px; }
+
+        /* Autor */
+        #rs .rs-author { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 12px; border-top: 1px solid #242424; padding-top: 20px; }
+        #rs .rs-avatar { width: 42px; height: 42px; min-width: 42px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C 0%, #8B6914 100%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-weight: 700; font-size: 1rem; color: #0A0A0A; }
+        #rs .rs-name { font-weight: 600; color: #F0F0F0; font-size: 0.88rem; margin-bottom: 2px; }
+        #rs .rs-source { font-size: 0.78rem; color: #666; }
+
+        /* CTA */
+        #rs .rs-cta { text-align: center; }
+
+        /* Responsive */
+        @media (max-width: 860px) {
+            #rs .rs-card { -ms-flex: 1 1 100%; flex: 1 1 100%; }
+            #rs .rs-badge { padding: 14px 24px; }
+            #rs .rs-big-num { font-size: 2.5rem; }
+        }
     </style>
 </head>
 <body class="has-preview-banner">
@@ -398,21 +423,25 @@
     </section>
 
     <!-- Recenze -->
-    <section id=”recenze-sekce”>
-        <div class=”rs-wrap”>
-            <span class=”rs-tag”>Recenze hostů</span>
-            <h2 class=”rs-title”>Co říkají naši <em>hosté</em></h2>
-            <div class=”rs-score”>
-                <span class=”rs-score-num”>4.8</span>
-                <div>
-                    <div class=”rs-stars”>★★★★★</div>
-                    <div class=”rs-score-sub”>přes 30 recenzí na Google</div>
+    <section id=”rs”>
+        <div class=”rs-inner”>
+
+            <div class=”rs-header”>
+                <span class=”rs-label”>Recenze hostů</span>
+                <h2 class=”rs-h2”>Co říkají naši <em>hosté</em></h2>
+                <div class=”rs-badge”>
+                    <span class=”rs-big-num”>4.8</span>
+                    <div class=”rs-badge-right”>
+                        <div class=”rs-badge-stars”>★★★★★</div>
+                        <div class=”rs-badge-sub”>přes 30 recenzí na Google</div>
+                    </div>
                 </div>
             </div>
-            <div class=”rs-grid”>
+
+            <div class=”rs-cards”>
                 <div class=”rs-card”>
                     <div class=”rs-card-stars”>★★★★★</div>
-                    <p class=”rs-card-text”>„Nejlepší asijská restaurace v okolí. Jídlo bylo naprosto autentické, prostředí krásné a obsluha velmi milá.”</p>
+                    <p class=”rs-card-text”>Nejlepší asijská restaurace v okolí. Jídlo bylo naprosto autentické, prostředí krásné a obsluha velmi milá. Určitě se vrátím!</p>
                     <div class=”rs-author”>
                         <div class=”rs-avatar”>M</div>
                         <div>
@@ -423,7 +452,7 @@
                 </div>
                 <div class=”rs-card”>
                     <div class=”rs-card-stars”>★★★★★</div>
-                    <p class=”rs-card-text”>„Pad Thai byl naprosto perfektní, přesně jak má být. Určitě se vrátíme, celá rodina byla nadšená!”</p>
+                    <p class=”rs-card-text”>Pad Thai byl naprosto perfektní, přesně jak má být. Celá rodina odcházela spokojená a určitě se sem vrátíme.</p>
                     <div class=”rs-author”>
                         <div class=”rs-avatar”>L</div>
                         <div>
@@ -434,7 +463,7 @@
                 </div>
                 <div class=”rs-card”>
                     <div class=”rs-card-stars”>★★★★★</div>
-                    <p class=”rs-card-text”>„Skvělé polední menu, rychlá obsluha a výborné ceny. Chodím sem pravidelně každý týden na oběd.”</p>
+                    <p class=”rs-card-text”>Skvělé polední menu, rychlá obsluha a výborné ceny. Chodím sem pravidelně každý týden a vždy odcházím spokojený.</p>
                     <div class=”rs-author”>
                         <div class=”rs-avatar”>T</div>
                         <div>
@@ -444,7 +473,11 @@
                     </div>
                 </div>
             </div>
-            <a href=”pages/recenze.html” class=”btn btn-primary”>Číst všechny recenze</a>
+
+            <div class=”rs-cta”>
+                <a href=”pages/recenze.html” class=”btn btn-primary”>Číst všechny recenze</a>
+            </div>
+
         </div>
     </section>
 
