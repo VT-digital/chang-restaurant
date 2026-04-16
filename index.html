@@ -378,40 +378,68 @@
     </section>
 
     <!-- Recenze -->
-    <section style=”background:#111;padding:100px 0;”>
-        <div style=”max-width:1200px;margin:0 auto;padding:0 24px;text-align:center;”>
-            <span style=”display:inline-block;font-size:0.75rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;border:1px solid #C9A84C;padding:6px 20px;border-radius:30px;margin-bottom:20px;”>Recenze hostů</span>
-            <h2 style=”font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:400;color:#FAFAFA;margin-bottom:16px;”>Co říkají naši <em>hosté</em></h2>
-            <div style=”display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:60px;”>
-                <span style=”font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:#C9A84C;line-height:1;”>4.8</span>
-                <div style=”text-align:left;”>
-                    <div style=”font-size:1.4rem;color:#C9A84C;letter-spacing:4px;margin-bottom:4px;”>★★★★★</div>
-                    <span style=”color:#999;font-size:0.85rem;”>přes 30 recenzí na Google</span>
+    <style>
+        #recenze-sekce { background: #111111; padding: 100px 0; }
+        #recenze-sekce .rs-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center; }
+        #recenze-sekce .rs-tag { display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9A84C; border: 1px solid #C9A84C; padding: 6px 20px; border-radius: 30px; margin-bottom: 20px; }
+        #recenze-sekce .rs-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 400; color: #FAFAFA; margin-bottom: 24px; }
+        #recenze-sekce .rs-score { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 60px; }
+        #recenze-sekce .rs-score-num { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 700; color: #C9A84C; line-height: 1; }
+        #recenze-sekce .rs-stars { font-size: 1.5rem; color: #C9A84C; letter-spacing: 3px; margin-bottom: 4px; }
+        #recenze-sekce .rs-score-sub { color: #999; font-size: 0.85rem; text-align: left; }
+        #recenze-sekce .rs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 50px; }
+        #recenze-sekce .rs-card { background: #1E1E1E; border: 1px solid #2A2A2A; border-radius: 12px; padding: 32px 28px; text-align: left; }
+        #recenze-sekce .rs-card-stars { color: #C9A84C; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 16px; }
+        #recenze-sekce .rs-card-text { font-family: 'Playfair Display', serif; font-style: italic; color: #CCCCCC; font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px; min-height: 80px; }
+        #recenze-sekce .rs-author { display: flex; align-items: center; gap: 12px; }
+        #recenze-sekce .rs-avatar { width: 40px; height: 40px; min-width: 40px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #A68A3E); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; color: #0A0A0A; }
+        #recenze-sekce .rs-name { font-weight: 600; color: #FAFAFA; font-size: 0.9rem; margin-bottom: 2px; }
+        #recenze-sekce .rs-source { color: #999; font-size: 0.8rem; }
+        @media (max-width: 768px) { #recenze-sekce .rs-grid { grid-template-columns: 1fr; } }
+    </style>
+    <section id=”recenze-sekce”>
+        <div class=”rs-wrap”>
+            <span class=”rs-tag”>Recenze hostů</span>
+            <h2 class=”rs-title”>Co říkají naši <em>hosté</em></h2>
+            <div class=”rs-score”>
+                <span class=”rs-score-num”>4.8</span>
+                <div>
+                    <div class=”rs-stars”>★★★★★</div>
+                    <div class=”rs-score-sub”>přes 30 recenzí na Google</div>
                 </div>
             </div>
-            <div style=”display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:50px;”>
-                <div style=”background:#1E1E1E;border:1px solid #2A2A2A;border-radius:12px;padding:32px 28px;text-align:left;display:flex;flex-direction:column;gap:16px;”>
-                    <div style=”color:#C9A84C;font-size:1.1rem;letter-spacing:2px;”>★★★★★</div>
-                    <p style=”font-family:'Playfair Display',serif;font-style:italic;color:#CCC;font-size:0.95rem;line-height:1.7;flex:1;”>„Nejlepší asijská restaurace v okolí. Jídlo bylo naprosto autentické, prostředí krásné a obsluha velmi milá.”</p>
-                    <div style=”display:flex;align-items:center;gap:12px;”>
-                        <div style=”width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#C9A84C,#A68A3E);display:flex;align-items:center;justify-content:center;font-weight:600;color:#0A0A0A;flex-shrink:0;”>M</div>
-                        <div><strong style=”display:block;color:#FAFAFA;font-size:0.9rem;”>Martin K.</strong><span style=”color:#999;font-size:0.8rem;”>Google recenze</span></div>
+            <div class=”rs-grid”>
+                <div class=”rs-card”>
+                    <div class=”rs-card-stars”>★★★★★</div>
+                    <p class=”rs-card-text”>„Nejlepší asijská restaurace v okolí. Jídlo bylo naprosto autentické, prostředí krásné a obsluha velmi milá.”</p>
+                    <div class=”rs-author”>
+                        <div class=”rs-avatar”>M</div>
+                        <div>
+                            <div class=”rs-name”>Martin K.</div>
+                            <div class=”rs-source”>Google recenze</div>
+                        </div>
                     </div>
                 </div>
-                <div style=”background:#1E1E1E;border:1px solid #2A2A2A;border-radius:12px;padding:32px 28px;text-align:left;display:flex;flex-direction:column;gap:16px;”>
-                    <div style=”color:#C9A84C;font-size:1.1rem;letter-spacing:2px;”>★★★★★</div>
-                    <p style=”font-family:'Playfair Display',serif;font-style:italic;color:#CCC;font-size:0.95rem;line-height:1.7;flex:1;”>„Pad Thai byl naprosto perfektní, přesně jak má být. Určitě se vrátíme, celá rodina byla nadšená!”</p>
-                    <div style=”display:flex;align-items:center;gap:12px;”>
-                        <div style=”width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#C9A84C,#A68A3E);display:flex;align-items:center;justify-content:center;font-weight:600;color:#0A0A0A;flex-shrink:0;”>L</div>
-                        <div><strong style=”display:block;color:#FAFAFA;font-size:0.9rem;”>Lucie H.</strong><span style=”color:#999;font-size:0.8rem;”>Google recenze</span></div>
+                <div class=”rs-card”>
+                    <div class=”rs-card-stars”>★★★★★</div>
+                    <p class=”rs-card-text”>„Pad Thai byl naprosto perfektní, přesně jak má být. Určitě se vrátíme, celá rodina byla nadšená!”</p>
+                    <div class=”rs-author”>
+                        <div class=”rs-avatar”>L</div>
+                        <div>
+                            <div class=”rs-name”>Lucie H.</div>
+                            <div class=”rs-source”>Google recenze</div>
+                        </div>
                     </div>
                 </div>
-                <div style=”background:#1E1E1E;border:1px solid #2A2A2A;border-radius:12px;padding:32px 28px;text-align:left;display:flex;flex-direction:column;gap:16px;”>
-                    <div style=”color:#C9A84C;font-size:1.1rem;letter-spacing:2px;”>★★★★★</div>
-                    <p style=”font-family:'Playfair Display',serif;font-style:italic;color:#CCC;font-size:0.95rem;line-height:1.7;flex:1;”>„Skvělé polední menu, rychlá obsluha a výborné ceny. Chodím sem pravidelně každý týden na oběd.”</p>
-                    <div style=”display:flex;align-items:center;gap:12px;”>
-                        <div style=”width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#C9A84C,#A68A3E);display:flex;align-items:center;justify-content:center;font-weight:600;color:#0A0A0A;flex-shrink:0;”>T</div>
-                        <div><strong style=”display:block;color:#FAFAFA;font-size:0.9rem;”>Tomáš V.</strong><span style=”color:#999;font-size:0.8rem;”>Google recenze</span></div>
+                <div class=”rs-card”>
+                    <div class=”rs-card-stars”>★★★★★</div>
+                    <p class=”rs-card-text”>„Skvělé polední menu, rychlá obsluha a výborné ceny. Chodím sem pravidelně každý týden na oběd.”</p>
+                    <div class=”rs-author”>
+                        <div class=”rs-avatar”>T</div>
+                        <div>
+                            <div class=”rs-name”>Tomáš V.</div>
+                            <div class=”rs-source”>Google recenze</div>
+                        </div>
                     </div>
                 </div>
             </div>
