@@ -2051,6 +2051,15 @@ body.has-preview-banner a img {
     pointer-events: auto;
 }
 
+/* Elfsight widget — výjimka z copy protection */
+body.has-preview-banner .elfsight-app-9a1e79a1-01ab-4229-9074-5f09297e03d1,
+body.has-preview-banner .elfsight-app-9a1e79a1-01ab-4229-9074-5f09297e03d1 img,
+body.has-preview-banner .elfsight-app-9a1e79a1-01ab-4229-9074-5f09297e03d1 iframe {
+    pointer-events: auto !important;
+    user-select: auto !important;
+    -webkit-user-select: auto !important;
+}
+
 /* Allow text selection in form fields */
 body.has-preview-banner input,
 body.has-preview-banner textarea,
