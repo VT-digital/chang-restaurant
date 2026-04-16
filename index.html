@@ -52,28 +52,22 @@
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
                 "opens": "11:00",
-                "closes": "22:00"
+                "closes": "15:00"
             },
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "12:00",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "17:00",
                 "closes": "22:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Sunday",
-                "opens": "12:00",
-                "closes": "21:00"
             }
         ],
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
             "bestRating": "5",
-            "ratingCount": "25"
+            "ratingCount": "34"
         },
         "sameAs": [
             "https://www.facebook.com/people/Changrestaurance/61584589026860/"
@@ -95,7 +89,7 @@
     <div id="previewBanner">
         <strong>PREVIEW VERZE</strong> — Toto je ukázka webu. Vytvořil Vojtěch Titlbach — <a href="https://vt-digital.cz" target="_blank" rel="noopener">VT-DIGITAL.CZ</a>
         <span class="preview-divider">•</span>
-        Náhledová verze webu pro klienta — fotografie budou nahrazeny reálnými snímky restaurace, menu bude editovatelné přes administrační rozhraní.
+        Fotografie a některé texty jsou placeholder. Finální verze bude obsahovat reálné fotky restaurace a pokrmů dodané klientem.
     </div>
 
     <!-- Preloader -->
@@ -134,14 +128,14 @@
             <div class="hero-pattern"></div>
         </div>
         <div class="hero-content" data-aos="fade-up" data-aos-duration="1200" style="text-align: center;">
-            <div class="hero-badge">Nově otevřeno — Sleva 20 % pro první hosty!</div>
+            <div class="hero-badge">Nově otevřeno v Litvínově</div>
             <h1 class="hero-title" style="display: flex; justify-content: center; align-items: center;">
                 <img src="img/logo-full.png" alt="Chang Asian Cuisine" class="hero-logo" style="max-width: 400px; width: 80%; margin: 0 auto 20px; display: block; filter: drop-shadow(0 4px 24px rgba(0,0,0,0.6));">
             </h1>
             <p class="hero-subtitle">Autentické chutě Thajska v elegantním prostředí — Tržní 421, Litvínov</p>
             <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-top: 4px;">
                 <a href="tel:+420721173373" style="color: rgba(255,255,255,0.7); text-decoration: none;">☎ 721 173 373</a>
-                 •  PO–PÁ 11–22h  •  SO 12–22h  •  NE 12–21h
+                 •  Denně 11–15h a 17–22h
             </p>
             <div class="hero-actions" style="justify-content: center;">
                 <a href="pages/menu.html" class="btn btn-primary">Prohlédnout menu</a>
@@ -160,20 +154,20 @@
             <div class="about-grid">
                 <div class="about-content" data-aos="fade-right" data-aos-duration="1000">
                     <span class="section-tag">Náš příběh</span>
-                    <h2 class="section-title">Vytríbená chuť,<br><em>profesionální servis</em></h2>
+                    <h2 class="section-title">Vytříbená chuť,<br><em>profesionální servis</em></h2>
                     <p class="about-text">
-                        Připravte své chut’ové pohárky! Chang Asian Cuisine otevřela své brány
+                        Připravte své chuťové pohárky! Chang Asian Cuisine otevřela své brány
                         a přináší to nejlepší z asijské kuchyně v moderním prostředí.
-                        Buddha sochy, tropické rostliny, teplé osvítlení a nástěnné malířšství
+                        Buddha sochy, tropické rostliny, teplé osvětlení a nástěnné malířství
                         s asijskými motivy vytváří jedinečnou atmosféru.
                     </p>
                     <p class="about-text">
                         Každé jídlo je připravováno s důrazem na autentické chutě — od
                         grilované kachny Bun Ngan až po fusion Udon Chiang Mai v kokosovém kari.
-                        Ideální místo pro obed, setkání s přáteli i večerní posezení.
+                        Ideální místo pro oběd, setkání s přáteli i večerní posezení.
                     </p>
                     <p class="about-text" style="font-size: 0.9rem; color: var(--gray); border-left: 2px solid var(--gold); padding-left: 16px; margin-top: 8px;">
-                        Navázali jsme na tradicí oblíbenou restauraci <strong style="color: var(--gray-light);">IMBIS.CZ</strong> na Tržní 421 — a povýšili jsme ji na zcela novou úroveč autentické asijské kuchyně.
+                        Na Tržní 421 jsme vybudovali zcela nový koncept autentické asijské kuchyně — s důrazem na kvalitní suroviny a tradiční thajské recepty.
                     </p>
                     <div class="about-features">
                         <div class="feature">
@@ -228,26 +222,13 @@
         </div>
     </section>
 
-    <!-- Opening Promo Banner -->
-    <section class="promo-banner">
-        <div class="container">
-            <div class="promo-content">
-                <span class="promo-icon">🌟</span>
-                <div>
-                    <strong>Speciální nabídka pro nové hosty</strong>
-                    <span>SLEVA 20 % na celý účet po dobu prvních 30 dní od otevření</span>
-                </div>
-                <a href="pages/rezervace.html" class="btn btn-primary btn-sm">Rezervovat</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Highlights / Featured Dishes -->
     <section class="highlights section section-dark">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">Speciality</span>
-                <h2 class="section-title">Ochutnejte naše<br><em>nejobíbenější jídla</em></h2>
+                <h2 class="section-title">Ochutnejte naše<br><em>nejoblíbenější jídla</em></h2>
             </div>
             <div class="dishes-grid">
                 <div class="dish-card" data-aos="fade-up" data-aos-delay="0">
@@ -266,7 +247,7 @@
                     </div>
                     <div class="dish-info">
                         <h3>Udon Chiang Mai</h3>
-                        <p>Jedinečné spojení Japonska a Thajska — udon nudle v krémové kokosové kari polévce s kurkumou a severothajským kořením</p>
+                        <p>Jedinečné spojení Japonska a Thajska — udon nudle v krémové kokosové kari polévce s kurkumou a severo-thajským kořením</p>
                         <span class="dish-price">Specialita</span>
                     </div>
                 </div>
@@ -390,49 +371,22 @@
                 <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="exp-icon">🚚</div>
                     <h3>Rozvoz</h3>
-                    <p>Objednejte si naše jídla domů. Rychlý rozvoz po Litvínově a okolí.</p>
+                    <p>Objednejte si přes Foodora a další rozvozové služby.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Reviews Preview -->
-    <section class="reviews-preview section section-dark">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Recenze</span>
-                <h2 class="section-title">Co říkají naši<br><em>spokojení hosté</em></h2>
+    <section class=”reviews-preview section section-dark”>
+        <div class=”container”>
+            <div class=”section-header” data-aos=”fade-up”>
+                <span class=”section-tag”>Recenze</span>
+                <h2 class=”section-title”>Co říkají naši<br><em>spokojení hosté</em></h2>
             </div>
-            <div class="reviews-slider" data-aos="fade-up">
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">„Pokud milujete asijskou kuchyni, a hlavně tu thajskou, tuhle restauraci prostě musíte navštívit. Za mě opravdu wow! Menu je velmi bohaté — od předkrmů až po dezerty. Skvělé jídlo, obsáhlé menu, hipsterská atmosféra.“</p>
-                    <div class="review-author">
-                        <strong>Hoang Nhu Quynh</strong>
-                        <span>Facebook • 8. 3. 2026</span>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">„Příjemné prostředí, milá obsluha a nabídka i pro vegany.
-                    Jídlo bylo výborné a určitě se zase brzo zastavíme!“</p>
-                    <div class="review-author">
-                        <strong>Facebook recenze</strong>
-                        <span>Ověřený host</span>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">„Zcela nový kulturně-gastronomický zážitek v Litvínově.
-                    Autentické thajské chutě, krásný prostor a profesionální servis. Doporučuji!“</p>
-                    <div class="review-author">
-                        <strong>Facebook recenze</strong>
-                        <span>Ověřený host</span>
-                    </div>
-                </div>
-            </div>
-            <div class="section-cta">
-                <a href="pages/recenze.html" class="btn btn-outline">Všechny recenze</a>
+            <div data-aos=”fade-up”>
+                <script src=”https://elfsightcdn.com/platform.js” async></script>
+                <div class=”elfsight-app-9a1e79a1-01ab-4229-9074-5f09297e03d1” data-elfsight-app-lazy></div>
             </div>
         </div>
     </section>
@@ -443,40 +397,23 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">Sociální sítě</span>
                 <h2 class="section-title">Sledujte nás<br><em>na Facebooku</em></h2>
-                <p style="color: var(--gray); margin-top: 8px;">Naše Reels májí 1,3–1,8 tis. zhlédnutí — připojte se!</p>
+                <p style="color: var(--gray); margin-top: 8px;">Novinky, denní menu a akce přímo z naší stránky</p>
             </div>
-            <div class="reels-grid" data-aos="fade-up">
-                <div class="reel-card">
-                    <div class="reel-thumb">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&amp;h=700&amp;fit=crop" alt="Chang Asian Cuisine Reel" loading="lazy">
-                        <div class="reel-play">▶</div>
-                        <div class="reel-views">1,3K zhl.</div>
-                    </div>
-                    <p>Otevíráme! Prví pohled do našeho útulného prostředí</p>
-                </div>
-                <div class="reel-card">
-                    <div class="reel-thumb">
-                        <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&amp;h=700&amp;fit=crop" alt="Chang food Reel" loading="lazy">
-                        <div class="reel-play">▶</div>
-                        <div class="reel-views">1,8K zhl.</div>
-                    </div>
-                    <p>Naše speciality nablízko — chuť Asie v Litvínově</p>
-                </div>
-                <div class="reel-card">
-                    <div class="reel-thumb">
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&amp;h=700&amp;fit=crop" alt="Chang udon Reel" loading="lazy">
-                        <div class="reel-play">▶</div>
-                        <div class="reel-views">1,5K zhl.</div>
-                    </div>
-                    <p>Udon Chiang Mai — když se Japonsko setká s Thajskem</p>
+
+            <!-- Facebook Page Plugin nefunguje s novými typy stránek (/people/ URL) -->
+            <!-- Zobrazujeme fallback CTA rovnou -->
+            <div id="fb-fallback" style="text-align: center; padding: 20px 0 10px;" data-aos="fade-up">
+                <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 48px 32px; max-width: 480px; margin: 0 auto;">
+                    <svg width="52" height="52" viewBox="0 0 24 24" fill="#1877F2" style="margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    <h3 style="color: var(--white); font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 10px;">Chang na Facebooku</h3>
+                    <p style="color: var(--gray); margin-bottom: 28px; line-height: 1.6;">Aktuální denní menu, novinky a akce sdílíme každý den přímo na naší Facebook stránce.</p>
+                    <a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        Otevřít stránku na Facebooku
+                    </a>
                 </div>
             </div>
-            <div class="section-cta" data-aos="fade-up">
-                <a href="https://www.facebook.com/people/Changrestaurance/61584589026860/" target="_blank" rel="noopener" class="btn btn-primary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                    Sledovat Chang na Facebooku
-                </a>
-            </div>
+
         </div>
     </section>
 
@@ -486,7 +423,7 @@
         <div class="container">
             <div class="cta-content" data-aos="zoom-in">
                 <h2>Přijďte ochutnat Asii</h2>
-                <p>Rezervujte si stůl a užijte si nezápomnělný gastronomický zážitek</p>
+                <p>Rezervujte si stůl a užijte si nezapomenutelný gastronomický zážitek</p>
                 <a href="pages/rezervace.html" class="btn btn-primary btn-lg">Rezervovat stůl</a>
             </div>
         </div>
@@ -524,9 +461,8 @@
                 <div class="footer-hours">
                     <h4>Otevírací doba</h4>
                     <ul>
-                        <li><span>Pondělí – Pátek</span> <span>11:00 – 22:00</span></li>
-                        <li><span>Sobota</span> <span>12:00 – 22:00</span></li>
-                        <li><span>Neděle</span> <span>12:00 – 21:00</span></li>
+                        <li><span>Pondělí – Neděle</span> <span>11:00 – 15:00</span></li>
+                        <li><span></span> <span>17:00 – 22:00</span></li>
                     </ul>
                 </div>
                 <div class="footer-contact">

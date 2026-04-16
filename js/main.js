@@ -26,12 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- AOS Init ---
+    const aosConfig = { duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 };
     if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 50,
+        AOS.init(aosConfig);
+    } else {
+        // AOS CDN se ještě nenačetlo — počkáme na window.load
+        window.addEventListener('load', () => {
+            if (typeof AOS !== 'undefined') AOS.init(aosConfig);
         });
     }
 
