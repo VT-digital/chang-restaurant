@@ -2028,6 +2028,61 @@ img { max-width: 100%; height: auto; display: block; }
     }
 }
 
+/* --- Reviews CTA block --- */
+.reviews-cta-block {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.reviews-cta-stars {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.reviews-cta-stars svg {
+    width: 32px;
+    height: 32px;
+    color: var(--gold);
+}
+
+.reviews-cta-score {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.reviews-cta-score span {
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.reviews-cta-label {
+    color: var(--gray);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.reviews-cta-quote {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--gray-light);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    border-left: 3px solid var(--gold);
+    padding-left: 20px;
+    text-align: left;
+}
+
 /* --- Copy Protection (preview verze) --- */
 body.has-preview-banner {
     -webkit-user-select: none;
