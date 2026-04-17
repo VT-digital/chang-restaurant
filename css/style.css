@@ -117,14 +117,19 @@ img { max-width: 100%; height: auto; display: block; }
     top: 0; left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 20px 0;
+    padding: 16px 0;
     transition: var(--transition);
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .navbar.scrolled {
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(10, 10, 10, 0.97);
     backdrop-filter: blur(20px);
-    padding: 12px 0;
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px 0;
     border-bottom: 1px solid var(--dark-border);
 }
 
@@ -168,9 +173,9 @@ img { max-width: 100%; height: auto; display: block; }
 
 .nav-link {
     color: var(--gray-light);
-    font-size: 0.9rem;
-    font-weight: 400;
-    padding: 8px 16px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    padding: 8px 18px;
     border-radius: var(--radius-sm);
     transition: var(--transition);
     letter-spacing: 0.5px;
@@ -353,11 +358,50 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.3rem);
-    color: var(--gray);
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    color: var(--gray-light);
     font-weight: 300;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
     letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.hero-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.hero-info-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 8px 18px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.hero-info-item:hover {
+    background: rgba(201,168,76,0.12);
+    border-color: rgba(201,168,76,0.3);
+}
+
+.hero-info-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero-info-item svg {
+    flex-shrink: 0;
+    opacity: 0.7;
 }
 
 .hero-actions {
@@ -612,10 +656,24 @@ img { max-width: 100%; height: auto; display: block; }
 
 .exp-card {
     text-align: center;
-    padding: 40px 24px;
+    padding: 40px 24px 32px;
     background: var(--dark-surface);
     border-radius: var(--radius);
     border: 1px solid var(--dark-border);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.exp-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0;
     transition: var(--transition);
 }
 
@@ -624,21 +682,44 @@ img { max-width: 100%; height: auto; display: block; }
     transform: translateY(-4px);
 }
 
+.exp-card:hover::before {
+    opacity: 1;
+}
+
 .exp-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.15);
 }
 
 .exp-card h3 {
     font-family: var(--font-display);
     font-size: 1.3rem;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .exp-card p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--gray);
     line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.exp-highlight {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 4px;
 }
 
 /* --- Reviews Section --- */
@@ -905,6 +986,16 @@ img { max-width: 100%; height: auto; display: block; }
     .hero-actions {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hero-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-info-item {
+        font-size: 0.85rem;
+        padding: 7px 16px;
     }
 }
 
